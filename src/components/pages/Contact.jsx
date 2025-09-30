@@ -5,9 +5,18 @@ import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
+import SEOHead from '../SEOHead';
 import contactImage from '../../assets/contac.webp';
 
 const Contact = () => {
+  const seo = {
+    title: "Contact Us - Professional Masonry Contractors in Arkansas | Carlson Masonry",
+    description: "Contact Carlson Masonry LLC for expert brick and stone masonry services in Northwest Arkansas. Call (479) 347-5469 or email info@carlsonmasonryllc.net. Serving Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs.",
+    keywords: "contact masonry contractor Arkansas, Carlson Masonry phone, masonry services contact Springdale, get masonry quote Rogers, brick masonry contact Bentonville, stone work inquiry Fayetteville",
+    canonical: "/contact",
+    ogImage: "/logo.png"
+  };
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -119,6 +128,7 @@ const Contact = () => {
 
   return (
     <div>
+      <SEOHead {...seo} />
       {/* Hero Section */}
       <section className="h-[100dvh] md:h-screen pt-[56px] md:pt-[72px] pb-0 md:pb-12 relative overflow-hidden flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #1B2A41 0%, #3E4C61 100%)' }}>
         {/* Background Image */}

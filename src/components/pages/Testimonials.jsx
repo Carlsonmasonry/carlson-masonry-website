@@ -3,9 +3,18 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Star, Quote, MapPin, Calendar, Phone, Mail } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
+import SEOHead from '../SEOHead';
 import imaheadergallery from '../../assets/testimonail.webp';
 
 const Testimonials = () => {
+  const seo = {
+    title: "Customer Reviews & Testimonials - Carlson Masonry Arkansas",
+    description: "Read real testimonials from satisfied customers in Northwest Arkansas. See why homeowners and businesses trust Carlson Masonry LLC for brick and stone masonry services in Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs.",
+    keywords: "masonry reviews Arkansas, Carlson Masonry testimonials, customer reviews Springdale, brick masonry testimonials Rogers, stone work reviews Bentonville, masonry contractor ratings Arkansas",
+    canonical: "/testimonials",
+    ogImage: "/logo.png"
+  };
+
   useEffect(() => {
     // Scroll to testimonials header if hash is present, otherwise scroll to top
     if (window.location.hash === '#testimonials-header') {
@@ -133,6 +142,7 @@ const Testimonials = () => {
 
   return (
     <div>
+      <SEOHead {...seo} />
       {/* Hero Section */}
       <section id="testimonials-header" className="h-[100dvh] md:h-screen pt-[56px] md:pt-[72px] pb-0 md:pb-12 relative overflow-hidden flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #1B2A41 0%, #3E4C61 100%)' }}>
         {/* Background Image */}

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Users, Calendar, Award, Shield, CheckCircle, Heart, Target, Eye, Zap, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
+import SEOHead from '../SEOHead';
 import imaabout from '../../assets/imaabout.webp';
 
 // Import images
@@ -36,8 +37,17 @@ const About = () => {
     { icon: Shield, number: "0", label: "Workplace Accidents" }
   ];
 
+  const seo = {
+    title: "About Us - Professional Masonry Contractors in Northwest Arkansas",
+    description: "Learn about Carlson Masonry LLC: Over 10 years of excellence in brick and stone masonry services across Northwest Arkansas. Meet our expert team serving Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs.",
+    keywords: "about Carlson Masonry, masonry company Arkansas, professional masonry contractors, brick masonry experts Springdale, stone masonry team Rogers, masonry experience Arkansas, Northwest Arkansas contractors",
+    canonical: "/about",
+    ogImage: "/logo.png"
+  };
+
   return (
     <div>
+      <SEOHead {...seo} />
       {/* Hero Section */}
       <section className="h-[100dvh] md:h-screen pt-[56px] md:pt-[72px] pb-0 md:pb-12 relative overflow-hidden flex items-center justify-center">
         {/* Background Image */}
@@ -312,6 +322,7 @@ const About = () => {
               <img 
                 src={projectImage} 
                 alt="High-quality brick and stone masonry project by Carlson Masonry in Arkansas"
+                loading="lazy"
                 className="rounded-lg shadow-2xl w-full h-auto"
               />
               <div className="absolute inset-0 bg-accent/10 rounded-lg"></div>

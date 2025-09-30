@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Star, Clock, Shield, Award, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
+import SEOHead from '../SEOHead';
 import imaheaderservice from '../../assets/ladrillo.webp';
 
 // Import images
@@ -30,6 +31,14 @@ const Services = () => {
       }, 200);
     }
   }, []);
+
+  const seo = {
+    title: "Masonry Services - Brick, Stone & Repair in Northwest Arkansas",
+    description: "Professional masonry services in Arkansas: Brick installation, natural stone work, masonry repairs and restoration. Expert contractors serving Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs. Free quotes available.",
+    keywords: "masonry services Arkansas, brick masonry Springdale, stone installation Rogers, masonry contractor Bentonville, brick repair Fayetteville, stone work Siloam Springs, residential masonry, commercial masonry Arkansas",
+    canonical: "/services",
+    ogImage: "/logo.png"
+  };
 
   const services = [
     {
@@ -143,6 +152,7 @@ const Services = () => {
 
   return (
     <div>
+      <SEOHead {...seo} />
       {/* Hero Section */}
       <section className="h-[100dvh] md:h-screen pt-[56px] md:pt-[72px] pb-0 md:pb-12 relative overflow-hidden flex items-center justify-center">
         {/* Background Image */}
@@ -279,6 +289,7 @@ const Services = () => {
                   <img 
                     src={service.image} 
                     alt={service.alt || service.title}
+                    loading="lazy"
                     className="rounded-lg shadow-2xl w-full h-auto"
                   />
                   <div className="absolute inset-0 bg-primary/10 rounded-lg"></div>

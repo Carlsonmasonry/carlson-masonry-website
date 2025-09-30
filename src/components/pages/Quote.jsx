@@ -5,9 +5,18 @@ import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
+import SEOHead from '../SEOHead';
 import imaheaderservice from '../../assets/quote.webp';
 
 const Quote = () => {
+  const seo = {
+    title: "Get Free Masonry Quote - Brick & Stone Work Estimates Arkansas",
+    description: "Request a free quote for professional masonry services in Northwest Arkansas. Fast estimates for brick installation, stone work, and masonry repairs in Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs. No obligation consultation.",
+    keywords: "free masonry quote Arkansas, brick masonry estimate, stone work quote Springdale, masonry cost Rogers, get masonry quote Bentonville, free masonry consultation Fayetteville, masonry pricing Arkansas",
+    canonical: "/quote",
+    ogImage: "/logo.png"
+  };
+
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState({
     // Step 1: Contact Info
@@ -231,6 +240,7 @@ const Quote = () => {
 
   return (
     <div>
+      <SEOHead {...seo} />
       {/* Hero Section */}
       <section className="h-[100dvh] md:h-screen pt-[56px] md:pt-[72px] pb-0 md:pb-12 relative overflow-hidden flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #1B2A41 0%, #3E4C61 100%)' }}>
         {/* Background Image */}

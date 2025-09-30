@@ -366,6 +366,7 @@ const Home = () => {
                   <img 
                     src={service.image} 
                     alt={service.alt || service.title}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent"></div>

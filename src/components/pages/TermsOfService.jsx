@@ -1,10 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, FileText, Scale, AlertTriangle, Shield, Users, Gavel } from 'lucide-react';
+import SEOHead from '../SEOHead';
 
 const TermsOfService = () => {
+  const seo = {
+    title: "Terms of Service | Carlson Masonry LLC",
+    description: "Read our terms of service for masonry services provided by Carlson Masonry LLC in Northwest Arkansas. Understanding our policies and customer agreements.",
+    keywords: "terms of service, service agreement, Carlson Masonry terms, masonry contract terms",
+    canonical: "/terms-of-service",
+    ogImage: "/logo.png"
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEOHead {...seo} />
       {/* Header */}
       <div className="bg-white shadow-sm border-b">
         <div className="container-custom py-4">

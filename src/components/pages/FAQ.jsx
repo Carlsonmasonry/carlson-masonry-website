@@ -3,8 +3,17 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, ChevronDown, ChevronUp, HelpCircle, MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
+import SEOHead from '../SEOHead';
 
 const FAQ = () => {
+  const seo = {
+    title: "FAQ - Frequently Asked Questions | Carlson Masonry Arkansas",
+    description: "Find answers to common questions about masonry services, pricing, timelines, and more. Get expert advice from Carlson Masonry LLC serving Northwest Arkansas including Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs.",
+    keywords: "masonry FAQ Arkansas, masonry questions, brick masonry answers, stone work FAQ, masonry pricing questions, masonry timeline Arkansas, masonry contractors FAQ",
+    canonical: "/faq",
+    ogImage: "/logo.png"
+  };
+
   const [openItems, setOpenItems] = useState({});
 
   const toggleItem = (index) => {
@@ -133,6 +142,7 @@ const FAQ = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEOHead {...seo} />
       {/* Header */}
       <div className="bg-white shadow-sm border-b">
         <div className="container-custom py-4">

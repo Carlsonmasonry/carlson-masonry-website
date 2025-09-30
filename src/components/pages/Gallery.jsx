@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Filter, X, ArrowRight, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
+import SEOHead from '../SEOHead';
 
 // Import images
 import project1 from '../../assets/C1YKTpWsG2qG.jpg';
@@ -24,6 +25,13 @@ import imaheadergallery from '../../assets/imaheadergallery.webp';
 const Gallery = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
+  const seo = {
+    title: "Project Gallery - Masonry Work in Northwest Arkansas | Carlson Masonry",
+    description: "View our portfolio of brick and stone masonry projects in Arkansas. Residential and commercial work in Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs. Quality craftsmanship in every project.",
+    keywords: "masonry gallery Arkansas, brick masonry projects, stone work portfolio, masonry photos Springdale, completed projects Rogers, masonry examples Bentonville, residential masonry gallery, commercial masonry Arkansas",
+    canonical: "/gallery",
+    ogImage: "/logo.png"
+  };
 
   const projects = [
     {
@@ -220,6 +228,7 @@ const Gallery = () => {
 
   return (
     <div>
+      <SEOHead {...seo} />
       {/* Hero Section */}
       <section className="h-[100dvh] md:h-screen pt-[56px] md:pt-[72px] pb-0 md:pb-16 relative overflow-hidden flex items-center justify-center">
         {/* Background Image */}
@@ -347,6 +356,7 @@ const Gallery = () => {
                     <img 
                       src={project.image} 
                       alt={project.alt || project.title}
+                      loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="gallery-overlay">
@@ -391,6 +401,7 @@ const Gallery = () => {
                     <img 
                       src={project.image} 
                       alt={project.alt || project.title}
+                      loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="gallery-overlay">
@@ -435,6 +446,7 @@ const Gallery = () => {
                     <img 
                       src={project.image} 
                       alt={project.alt || project.title}
+                      loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="gallery-overlay">
@@ -479,6 +491,7 @@ const Gallery = () => {
                     <img 
                       src={project.image} 
                       alt={project.alt || project.title}
+                      loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="gallery-overlay">
@@ -626,6 +639,7 @@ const Gallery = () => {
               <img 
                 src={selectedProject.image} 
                 alt={selectedProject.alt || selectedProject.title}
+                loading="lazy"
                 className="w-full h-64 md:h-96 object-cover rounded-t-lg"
               />
             </div>

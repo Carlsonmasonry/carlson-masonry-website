@@ -1,10 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Shield, Eye, Lock, UserCheck, Database, Mail } from 'lucide-react';
+import SEOHead from '../SEOHead';
 
 const PrivacyPolicy = () => {
+  const seo = {
+    title: "Privacy Policy | Carlson Masonry LLC",
+    description: "Read our privacy policy to understand how Carlson Masonry LLC protects your personal information and data. Learn about our commitment to privacy and security.",
+    keywords: "privacy policy, data protection, Carlson Masonry privacy, customer data security",
+    canonical: "/privacy-policy",
+    ogImage: "/logo.png"
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEOHead {...seo} />
       {/* Header */}
       <div className="bg-white shadow-sm border-b">
         <div className="container-custom py-4">
