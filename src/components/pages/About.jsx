@@ -124,7 +124,7 @@ const About = () => {
         
         <div className="container-custom text-center relative z-10 flex flex-col items-center justify-center h-full md:block md:h-auto md:pt-20">
           {/* Main Title */}
-          <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold mb-3 md:mb-6 leading-tight md:leading-tight" style={{ 
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 leading-tight md:leading-tight" style={{ 
             color: '#FFFFFF', 
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
             fontFamily: 'Poppins, sans-serif',
@@ -137,7 +137,7 @@ const About = () => {
           </h1>
           
           {/* Subtitle */}
-          <p className="text-lg md:text-3xl max-w-[90%] md:max-w-5xl mx-auto leading-relaxed md:leading-relaxed mb-6 md:mb-8 px-6 md:px-0" style={{ 
+          <p className="text-lg md:text-xl max-w-[90%] md:max-w-3xl mx-auto leading-relaxed md:leading-snug mb-6 md:mb-4 px-6 md:px-0" style={{ 
             color: '#FFFFFF', 
             fontFamily: 'Inter, sans-serif',
             lineHeight: '1.6'
@@ -146,7 +146,7 @@ const About = () => {
           </p>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-2 md:gap-4 justify-center items-center mb-3 md:mb-8">
+          <div className="flex flex-col sm:flex-row gap-2 md:gap-3 justify-center items-center mb-3 md:mb-3">
             <Link to="/quote#quote-form">
               <Button 
                 size="lg"

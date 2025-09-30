@@ -174,7 +174,7 @@ const Home = () => {
           <img 
             src={heroImage} 
             alt="Professional masonry services in Northwest Arkansas - Brick and stone work Springdale Rogers Bentonville"
-            className="w-[120%] h-[120%] object-cover object-[center_60%] md:object-[right_-20%]"
+            className="w-[120%] h-[120%] md:w-full md:h-full object-cover object-[center_60%] md:object-[center_40%]"
           />
         </div>
         {/* Elegant Gradient Overlay */}
@@ -191,34 +191,34 @@ const Home = () => {
         
         <div className="container-custom text-center relative z-10 flex flex-col items-center justify-center h-full md:block md:h-auto md:pt-20">
           {/* Main Title */}
-          <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-6 leading-tight md:leading-tight" style={{
-            color: '#FFFFFF',
+          <h1 className="text-xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-4 leading-tight md:leading-tight" style={{
+            color: '#FFFFFF', 
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
             fontFamily: 'Poppins, sans-serif',
             fontWeight: '700'
           }}>
             Professional Masonry<br className="md:hidden" /> in Arkansas
-            <span className="block text-xl md:text-3xl lg:text-4xl font-bold text-center bg-gradient-to-r from-[#FFD700] to-[#DAA520] bg-clip-text text-transparent drop-shadow-[1px_1px_4px_rgba(0,0,0,0.5)] leading-tight md:leading-tight">
-              We Build Your Dreams
+            <span className="block text-lg md:text-3xl lg:text-4xl font-bold text-center bg-gradient-to-r from-[#FFD700] to-[#DAA520] bg-clip-text text-transparent drop-shadow-[1px_1px_4px_rgba(0,0,0,0.5)] leading-tight md:leading-tight">
+            We Build Your Dreams
             </span>
           </h1>
           
           {/* Subtitle */}
-          <p className="text-lg md:text-3xl max-w-[90%] md:max-w-5xl mx-auto leading-relaxed md:leading-relaxed mb-6 md:mb-8 px-6 md:px-0" style={{ 
+          <p className="text-base md:text-xl max-w-[90%] md:max-w-3xl mx-auto leading-snug md:leading-snug mb-4 md:mb-4 px-4 md:px-0" style={{ 
             color: '#FFFFFF', 
             fontFamily: 'Inter, sans-serif',
-            lineHeight: '1.6'
+            lineHeight: '1.3'
           }}>
             Over 10 years transforming visions into lasting realities across Northwest Arkansas. Specialists in masonry combining tradition, innovation and excellence. Proudly serving Rogers, Bentonville, Springdale, Fayetteville, and Siloam Springs with professional masonry services tailored to Arkansas's unique climate and architectural needs.
           </p>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-2 md:gap-4 justify-center items-center mb-3 md:mb-8">
+          <div className="flex flex-col sm:flex-row gap-2 md:gap-3 justify-center items-center mb-2 md:mb-3">
             <Link to="/quote#quote-form">
               <Button 
-                size="lg"
+                size="lg" 
                 className="transition-all duration-300 shadow-lg hover:shadow-xl px-8 py-2 md:py-3 text-sm md:text-lg font-semibold"
-                style={{
+                style={{ 
                   backgroundColor: '#FFB400',
                   color: '#1B2A41',
                   fontFamily: 'Montserrat, sans-serif',
@@ -244,7 +244,7 @@ const Home = () => {
             <Link to="/gallery">
               <Button 
                 className="text-sm md:text-lg px-8 py-2 md:py-4 transition-all duration-300 shadow-lg hover:shadow-xl"
-                style={{
+                style={{ 
                   backgroundColor: '#8AA679',
                   color: '#FFFFFF',
                   fontFamily: 'Montserrat, sans-serif',
@@ -267,13 +267,13 @@ const Home = () => {
           </div>
           
           {/* Quick contact */}
-          <div className="flex flex-col gap-0.5 justify-center items-center text-xs md:text-sm mt-4 md:-mt-2">
+          <div className="flex flex-col gap-0.5 justify-center items-center text-[10px] md:text-xs mt-2 md:mt-0">
             <div className="flex flex-col md:flex-row items-center space-y-0.5 md:space-y-0 md:space-x-4">
-              <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 md:w-4 md:h-4 text-white" />
-                <span className="text-white">(479) 347-5469</span>
-              </div>
-              <div className="flex items-center space-x-2">
+              <span className="text-white">(479) 347-5469</span>
+            </div>
+            <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 md:w-4 md:h-4 text-white" />
                 <span className="text-white">info@carlsonmasonryllc.net</span>
               </div>
@@ -297,13 +297,13 @@ const Home = () => {
           {/* Título */}
           <h2 className="text-xl md:text-3xl font-bold text-white mb-1 leading-snug">
             Why Choose Carlson Masonry in Northwest Arkansas
-          </h2>
+            </h2>
 
           {/* Texto descriptivo */}
           <p className="text-sm md:text-lg text-white leading-normal mt-1 max-w-3xl mx-auto">
-            The foundation that defines who we are and ensures your satisfaction.
-          </p>
-
+              The foundation that defines who we are and ensures your satisfaction.
+            </p>
+          
           {/* Grid de tarjetas */}
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 mt-5 md:mt-8">
             {coreValues.map((value, index) => {
@@ -419,7 +419,7 @@ const Home = () => {
               A proven record of excellence in every project
             </p>
           </div>
-
+          
           {/* Grid de estadísticas */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 text-center mx-4 md:mx-8">
             {stats.map((stat, index) => (
@@ -543,25 +543,25 @@ const Home = () => {
                   {/* Reseña */}
                   <div>
                     <div className="flex items-center mb-2">
-                      {[...Array(testimonial.rating)].map((_, i) => (
+                    {[...Array(testimonial.rating)].map((_, i) => (
                         <Star key={i} className="w-3 h-3 fill-current mr-1" style={{ color: '#FFB703' }} />
-                      ))}
-                    </div>
+                    ))}
+                  </div>
                     <p className="text-sm italic leading-snug text-gray-700 mb-3 line-clamp-4">
-                      "{testimonial.text}"
-                    </p>
+                    "{testimonial.text}"
+                  </p>
                   </div>
                   
                   {/* Datos del cliente */}
                   <div className="border-t pt-2" style={{ borderColor: '#E0E0E0' }}>
                     <div className="font-bold text-sm" style={{ color: '#1B2A41' }}>
-                      {testimonial.name}
-                    </div>
+                        {testimonial.name}
+                      </div>
                     <div className="text-xs" style={{ color: '#3E4C61' }}>
-                      {testimonial.location}
-                    </div>
+                        {testimonial.location}
+                      </div>
                     <div className="text-xs font-semibold" style={{ color: '#FFB400' }}>
-                      {testimonial.project}
+                        {testimonial.project}
                     </div>
                   </div>
                 </CardContent>
