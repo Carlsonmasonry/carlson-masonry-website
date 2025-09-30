@@ -103,7 +103,7 @@ const Header = () => {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200">
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 max-h-[calc(100vh-60px)] overflow-y-auto">
             <div className="container-custom py-2">
               <div className="flex flex-col">
                 {navItems.map((item) => (
@@ -120,7 +120,7 @@ const Header = () => {
                 ))}
                 <div className="pt-2 pb-1 px-3 border-t border-gray-200 mt-1">
                   <Link to="/quote" onClick={() => setIsMenuOpen(false)}>
-                    <Button className="btn-secondary w-full">Request Quote</Button>
+                    <Button className="btn-secondary w-full text-sm py-2 px-4">Request Quote</Button>
                   </Link>
                 </div>
                 <div className="px-3 py-2 border-t border-gray-200 bg-gray-50">

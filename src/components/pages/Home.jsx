@@ -209,7 +209,7 @@ const Home = () => {
           </h1>
           
           {/* Subtitle */}
-          <p className="text-lg md:text-xl max-w-[90%] md:max-w-3xl mx-auto leading-relaxed md:leading-snug mb-6 md:mb-4 px-6 md:px-0" style={{ 
+          <p className="text-lg md:text-lg max-w-[90%] md:max-w-3xl mx-auto leading-relaxed md:leading-snug mb-6 md:mb-3 px-6 md:px-0" style={{ 
             color: '#FFFFFF', 
             fontFamily: 'Inter, sans-serif',
             lineHeight: '1.6'
