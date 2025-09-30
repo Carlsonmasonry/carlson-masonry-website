@@ -62,11 +62,11 @@ const Header = () => {
       <nav className="h-12 md:h-16 px-3 md:px-4"> {/* 👈 altura controlada */}
         <div className="container-custom flex justify-between items-center h-full">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center h-full py-1">
             <img
               src={logoImage}
               alt="Carlson Masonry Logo"
-              className="w-8 h-8 md:w-14 md:h-14 object-contain"
+              className="h-10 md:h-14 w-auto object-contain"
             />
           </Link>
 
