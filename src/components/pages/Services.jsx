@@ -40,6 +40,112 @@ const Services = () => {
     ogImage: "/logo.png"
   };
 
+  // Service Schema
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Masonry Services",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Carlson Masonry LLC",
+      "image": "https://carlsonmasonryllc.net/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5713 Dancing Rabbit Dr",
+        "addressLocality": "Springdale",
+        "addressRegion": "AR",
+        "postalCode": "72762",
+        "addressCountry": "US"
+      },
+      "telephone": "(479) 347-5469"
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Springdale, AR"},
+      {"@type": "City", "name": "Rogers, AR"},
+      {"@type": "City", "name": "Bentonville, AR"},
+      {"@type": "City", "name": "Fayetteville, AR"},
+      {"@type": "City", "name": "Siloam Springs, AR"}
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Masonry Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Brick Masonry",
+            "description": "Expert brick installation for residential and commercial projects"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Natural Stone Installation",
+            "description": "Beautiful natural stone solutions for any architectural project"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Masonry Repairs and Restoration",
+            "description": "Expert masonry repair and restoration services"
+          }
+        }
+      ]
+    }
+  };
+
+  // FAQ Schema for Services
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What masonry services does Carlson Masonry offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer comprehensive masonry services including brick installation, natural stone work, masonry repairs and restoration, chimney construction and repair, retaining walls, patios, walkways, fireplaces, and both residential and commercial projects throughout Northwest Arkansas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does masonry work cost in Arkansas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Masonry costs vary based on project size, materials, and complexity. Brick installation typically ranges from $15-30 per square foot, while natural stone can range from $25-50 per square foot. We offer free quotes to provide accurate estimates for your specific project in Springdale, Rogers, Bentonville, Fayetteville, or Siloam Springs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a typical masonry project take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Project timelines vary: a simple brick patio might take 3-5 days, while a complete home facade could take 2-4 weeks. We provide detailed timelines during our free consultation and always strive to complete projects on schedule while maintaining our high-quality standards."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer free estimates for masonry work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Carlson Masonry LLC offers free, no-obligation consultations and quotes for all masonry projects in Northwest Arkansas. Contact us at (479) 347-5469 or through our website to schedule your free estimate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best time of year for masonry work in Arkansas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "While we work year-round, spring and fall offer ideal conditions for masonry work in Arkansas with moderate temperatures. However, we can successfully complete projects in summer and winter with proper techniques. We'll advise on the best timing for your specific project."
+        }
+      }
+    ]
+  };
+
   const services = [
     {
       title: "Brick Masonry",
@@ -153,6 +259,14 @@ const Services = () => {
   return (
     <div>
       <SEOHead {...seo} />
+      {/* Service Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify(serviceSchema)}
+      </script>
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify(faqSchema)}
+      </script>
       {/* Hero Section */}
       <section className="h-[100dvh] md:h-screen pt-[56px] md:pt-[72px] pb-0 md:pb-12 relative overflow-hidden flex items-center justify-center">
         {/* Background Image */}

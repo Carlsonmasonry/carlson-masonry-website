@@ -45,9 +45,61 @@ const About = () => {
     ogImage: "/logo.png"
   };
 
+  // FAQ Schema for About page
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long has Carlson Masonry been in business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Carlson Masonry LLC has been providing professional masonry services in Northwest Arkansas for over 10 years since 2010. We have completed over 500 projects across Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas does Carlson Masonry serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We proudly serve all of Northwest Arkansas, including Springdale, Rogers, Bentonville, Fayetteville, Siloam Springs, and surrounding communities. Our team is familiar with local building codes and Arkansas's unique climate requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Carlson Masonry licensed and insured?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Carlson Masonry LLC is fully licensed, bonded, and insured. We maintain all necessary certifications and insurance coverage to protect our clients and ensure professional service delivery throughout Northwest Arkansas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of masonry services does Carlson Masonry offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We specialize in brick masonry installation, natural stone work, masonry repairs and restoration, chimney construction and repair, retaining walls, patios, fireplaces, and both residential and commercial masonry projects across Arkansas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Carlson Masonry offer warranties on their work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we stand behind our work with comprehensive warranties. All our masonry projects come with workmanship guarantees, and we use only high-quality materials designed to withstand Arkansas's weather conditions for decades."
+        }
+      }
+    ]
+  };
+
   return (
     <div>
       <SEOHead {...seo} />
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify(faqSchema)}
+      </script>
       {/* Hero Section */}
       <section className="h-[100dvh] md:h-screen pt-[56px] md:pt-[72px] pb-0 md:pb-12 relative overflow-hidden flex items-center justify-center">
         {/* Background Image */}
