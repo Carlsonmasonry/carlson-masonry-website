@@ -64,8 +64,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Quick Links + Our Services en paralelo - MÓVIL: izquierda, DESKTOP: centrado */}
-        <div className="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 text-left md:text-center">
+        {/* Quick Links + Our Services en paralelo - MÓVIL: grid 2 columnas, DESKTOP: centrado */}
+        <div className="col-span-1 md:col-span-2 grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6 text-left md:text-center">
           {/* Quick Links */}
           <div>
             <h4 className="text-sm md:text-md font-semibold mb-1 md:mb-2" style={{ color: '#FFB400' }}>Quick Links</h4>

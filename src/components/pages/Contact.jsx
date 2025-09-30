@@ -485,7 +485,7 @@ const Contact = () => {
       </section>
 
       {/* Emergency Contact */}
-      <section className="py-12" style={{ backgroundColor: '#1B2A41' }}>
+      <section className="py-12 px-4 md:px-8" style={{ backgroundColor: '#1B2A41' }}>
         <div className="container-custom">
           <div className="text-center mb-8">
             <h2 className="text-responsive-lg font-bold mb-4" style={{ color: '#FFFFFF', fontFamily: 'Montserrat, sans-serif', fontWeight: '700' }}>
@@ -515,7 +515,7 @@ const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12" style={{ backgroundColor: '#F5E6D3' }}>
+      <section className="py-12 px-4 md:px-8" style={{ backgroundColor: '#F5E6D3' }}>
         <div className="container-custom text-center">
           <h2 className="text-responsive-lg font-bold mb-4" style={{ color: '#1B2A41', fontFamily: 'Montserrat, sans-serif', fontWeight: '700' }}>
             Prefer a Detailed Quote?
