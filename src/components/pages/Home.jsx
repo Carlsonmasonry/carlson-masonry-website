@@ -62,18 +62,21 @@ const Home = () => {
       title: "Brick Masonry",
       description: "Expert brick installation for residential and commercial projects with impeccable finishes.",
       image: brickworkImage,
+      alt: "Expert brick masonry services in Rogers and Bentonville Arkansas - Professional brickwork installation",
       features: ["New installation", "Repairs", "Historical restoration"]
     },
     {
       title: "Natural Stone Installation",
       description: "Beautiful natural stone solutions that add elegance and durability to any project.",
       image: stoneworkImage,
+      alt: "Stone masonry installation in Fayetteville and Siloam Springs Arkansas - Natural stone work",
       features: ["Decorative stone", "Retaining walls", "Fireplaces"]
     },
     {
       title: "Repairs and Restoration",
       description: "Specialized repair services that restore the original beauty to your structures.",
       image: image4,
+      alt: "Masonry repair and restoration services in Springdale Arkansas - Chimney and brick restoration",
       features: ["Crack repair", "Rejointing", "Waterproofing"]
     }
   ];
@@ -170,7 +173,7 @@ const Home = () => {
         <div className="absolute inset-0 opacity-70">
           <img 
             src={heroImage} 
-            alt="Home Background"
+            alt="Professional masonry services in Northwest Arkansas - Brick and stone work Springdale Rogers Bentonville"
             className="w-[120%] h-[120%] object-cover object-[center_60%] md:object-[right_-20%]"
           />
         </div>
@@ -362,7 +365,7 @@ const Home = () => {
                 <div className="relative h-40 md:h-48 overflow-hidden m-3 rounded-lg">
                   <img 
                     src={service.image} 
-                    alt={service.title}
+                    alt={service.alt || service.title}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent"></div>

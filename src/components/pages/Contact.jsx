@@ -125,7 +125,7 @@ const Contact = () => {
         <div className="absolute inset-0 opacity-40">
           <img 
             src={contactImage} 
-            alt="Contact Background"
+            alt="Contact Carlson Masonry LLC - Professional masonry contractor in Northwest Arkansas"
             className="w-full h-full object-cover object-center md:object-top"
           />
         </div>

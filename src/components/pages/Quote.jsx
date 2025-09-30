@@ -237,7 +237,7 @@ const Quote = () => {
         <div className="absolute inset-0 opacity-60">
           <img 
             src={imaheaderservice} 
-            alt="Quote Background"
+            alt="Get free masonry quote in Arkansas - Brick and stone work estimates Springdale Rogers"
             className="w-full h-full object-cover object-center"
           />
         </div>

@@ -36,6 +36,7 @@ const Services = () => {
       title: "Brick Masonry",
       description: "Expert brick installation for residential and commercial projects with impeccable finishes and guaranteed durability.",
       image: brickworkImage,
+      alt: "Professional brick masonry services in Bentonville and Rogers Arkansas - Expert brickwork installation",
       features: [
         "New brick installation",
         "Existing structure repairs",
@@ -63,6 +64,7 @@ const Services = () => {
       title: "Natural Stone Installation",
       description: "Beautiful natural stone solutions that add elegance, durability and value to any architectural project.",
       image: stoneworkImage,
+      alt: "Natural stone masonry installation in Fayetteville Arkansas - Stone walls and fireplaces",
       features: [
         "Decorative stone for facades",
         "Retaining walls and landscaping",
@@ -90,6 +92,7 @@ const Services = () => {
       title: "Repairs and Restoration",
       description: "Specialized repair services that restore the original beauty and structural integrity to your constructions.",
       image: repairImage,
+      alt: "Masonry repair and restoration in Springdale Arkansas - Brick and stone restoration services",
       features: [
         "Crack and fissure repair",
         "Mortar repointing and replacement",
@@ -146,7 +149,7 @@ const Services = () => {
         <div className="absolute inset-0 opacity-80">
           <img 
             src={imaheaderservice} 
-            alt="Services Background"
+            alt="Masonry services in Northwest Arkansas - Brick stone and chimney work Springdale Rogers"
             className="w-full h-full object-cover object-center"
           />
         </div>
@@ -275,7 +278,7 @@ const Services = () => {
                 <div className={`relative ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                   <img 
                     src={service.image} 
-                    alt={service.title}
+                    alt={service.alt || service.title}
                     className="rounded-lg shadow-2xl w-full h-auto"
                   />
                   <div className="absolute inset-0 bg-primary/10 rounded-lg"></div>

@@ -44,7 +44,7 @@ const About = () => {
         <div className="absolute inset-0 opacity-60">
           <img 
             src={imaabout} 
-            alt="About Background"
+            alt="About Carlson Masonry LLC - Professional masonry contractor in Northwest Arkansas"
             className="w-full h-full object-cover object-center"
           />
         </div>
@@ -311,7 +311,7 @@ const About = () => {
             <div className="relative">
               <img 
                 src={projectImage} 
-                alt="High-quality Carlson Masonry project"
+                alt="High-quality brick and stone masonry project by Carlson Masonry in Arkansas"
                 className="rounded-lg shadow-2xl w-full h-auto"
               />
               <div className="absolute inset-0 bg-accent/10 rounded-lg"></div>

@@ -35,6 +35,7 @@ const Gallery = () => {
       year: "2024",
       description: "Modern facade with natural stone cladding in beige, sand and brown tones that provides elegant rustic texture.",
       image: project3,
+      alt: "Natural stone facade masonry in Springdale Arkansas - Stone cladding by Carlson Masonry",
       details: "Construction project that stands out for excellence in natural stone cladding. The lower and central part of the wall is covered with rectangular stones in beige, sand and brown tones, creating an elegant rustic texture. In combination, light brick is used in the upper part, achieving a harmonious contrast between materials. The main entrance is also framed in stone, highlighting the solidity of the design. The gabled roof with gray tiles perfectly frames the stone and brick walls, while the large front windows with interior shutters complement the facade and allow optimal natural lighting."
     },
     {
@@ -46,6 +47,7 @@ const Gallery = () => {
       year: "2024",
       description: "Natural stone retaining wall with integrated decorative elements.",
       image: project1,
+      alt: "Stone retaining wall construction in Rogers Arkansas - Decorative masonry work",
       details: "Functional and aesthetic solution for a pronounced slope in the terrain. We combine structural engineering with landscape design to create an element that is both functional and beautiful."
     },
     {
@@ -57,6 +59,7 @@ const Gallery = () => {
       year: "2024",
       description: "Modern main facade that combines brown brick with light stone cladding in gray and beige tones.",
       image: project4,
+      alt: "Brick and stone facade in Rogers Arkansas - Professional masonry by Carlson Masonry LLC",
       details: "Construction project that demonstrates excellence in masonry combining brick and natural stone. The main entrance is framed by two brick columns that support a gabled roof with exposed wooden beams. The light gray main door with upper rectangular window is complemented by exterior lantern-style lights in black finish. The design stands out for the elegant combination of brown brick with light stone cladding in gray and beige tones, creating a sophisticated visual contrast. The tall windows with white frames and interior shutters, along with the sloped gray tile roof and recessed lights under the eaves, complete a facade of maximum architectural quality."
     },
     {
@@ -68,6 +71,7 @@ const Gallery = () => {
       year: "2024",
       description: "Fireplace clad with stacked slate stone in natural gray tones, creating an imposing and elegant focal point.",
       image: project7,
+      alt: "Stone fireplace installation in Bentonville Arkansas - Custom masonry fireplaces",
       details: "Fireplace project that stands out for its excellence in slate stone cladding. The fireplace is completely clad with stacked slate stone in natural gray tones, which provide texture and a modern rustic style to the environment. Its design extends from floor to ceiling, becoming an imposing and elegant focal point within the room. At the top, a rustic wooden beam with natural finish functions as a decorative shelf, highlighting the contrast between the warmth of wood and the solidity of stone. The base includes a functional space for storing firewood, reinforcing its cozy and practical style, while the front features a hearth framed in black iron with glass doors, combining durability with contemporary design."
     },
     {
@@ -79,6 +83,7 @@ const Gallery = () => {
       year: "2023",
       description: "Structural and aesthetic repair of old brick perimeter wall.",
       image: project2,
+      alt: "Brick wall repair in Springdale Arkansas - Masonry restoration services",
       details: "Repair project that involved structural reinforcement of a perimeter wall over 50 years old. Specialized repair techniques that extended its useful life for additional decades."
     },
     {
@@ -90,6 +95,7 @@ const Gallery = () => {
       year: "2024",
       description: "House side facade with two-door garage and brown brick finishes with tone variations.",
       image: project5,
+      alt: "Brick facade with garage in Bentonville Arkansas - Residential masonry work",
       details: "Construction project that stands out for excellence in brick masonry. The side facade features brown bricks with natural tone variations, creating a rich and authentic texture. The garage has two white doors with upper arched windows and decorative black handles. The integration of black exterior lights with frosted glass perfectly complements the design, while the sloped gray tile roof and white gutter complete the structure with impeccable finishes."
     },
     {
@@ -101,6 +107,7 @@ const Gallery = () => {
       year: "2024",
       description: "Covered patio with light brown brick walls and recessed lighting system.",
       image: project6,
+      alt: "Brick patio construction in Fayetteville Arkansas - Outdoor masonry by Carlson Masonry",
       details: "Covered patio project that demonstrates excellence in brick wall construction. The walls are built with light brown bricks that create a uniform and elegant texture. The dark roof with circular recessed lights provides perfect ambient lighting. The space is designed for outdoor entertainment, complemented by light wood furniture with white cushions and decorative elements such as tasseled poufs. The integration of windows with gray frames and garland-style hanging lights completes a cozy and functional environment."
     },
     // New Residential Projects
@@ -113,6 +120,7 @@ const Gallery = () => {
       year: "2024",
       description: "Single-story house with brown-toned brick facade and light stone details at the entrance and columns.",
       image: residencial6,
+      alt: "Residential brick and stone masonry in Rogers Arkansas - Home facade by Carlson Masonry",
       details: "Single-story house with brown-toned brick facade and light stone details at the entrance and columns. The arched windows and well-maintained garden with shrubs reinforce a cozy and elegant style."
     },
     {
@@ -124,6 +132,7 @@ const Gallery = () => {
       year: "2024",
       description: "Spacious single-story residence with red brick facade and light gray stone base.",
       image: residencial5,
+      alt: "Red brick residential masonry in Bentonville Arkansas - Custom home construction",
       details: "Spacious single-story residence with red brick facade and light gray stone base. The covered entrance with columns and symmetrical front with large windows that allow abundant natural light stand out."
     },
     {
@@ -135,6 +144,7 @@ const Gallery = () => {
       year: "2024",
       description: "Sophisticated style house with beige stone facade combined with painted white brick.",
       image: residencial4,
+      alt: "Stone and brick home in Springdale Arkansas - Elegant residential masonry",
       details: "Sophisticated style house with beige stone facade combined with painted white brick. The main entrance with wooden double door and black lanterns conveys elegance and presence."
     },
     {
@@ -146,6 +156,7 @@ const Gallery = () => {
       year: "2024",
       description: "Residencia de dos plantas con fachada en ladrillo blanco pintado y detalles en madera natural y metal oscuro.",
       image: residencial3,
+      alt: "Modern brick home in Siloam Springs Arkansas - Two-story residential masonry",
       details: "Residencia de dos plantas con fachada en ladrillo blanco pintado y detalles en madera natural y metal oscuro. El pórtico de entrada con columnas negras contrasta con el diseño claro, logrando un aspecto contemporáneo."
     },
     {
@@ -215,7 +226,7 @@ const Gallery = () => {
         <div className="absolute inset-0 opacity-80">
           <img 
             src={imaheadergallery} 
-            alt="Gallery Background"
+            alt="Carlson Masonry project gallery - Brick and stone work in Northwest Arkansas"
             className="w-full h-full object-cover object-[center_70%]"
           />
         </div>
@@ -335,7 +346,7 @@ const Gallery = () => {
                   <div className="relative h-48 overflow-hidden rounded-t-lg">
                     <img 
                       src={project.image} 
-                      alt={project.title}
+                      alt={project.alt || project.title}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="gallery-overlay">
@@ -379,7 +390,7 @@ const Gallery = () => {
                   <div className="relative h-48 overflow-hidden rounded-t-lg">
                     <img 
                       src={project.image} 
-                      alt={project.title}
+                      alt={project.alt || project.title}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="gallery-overlay">
@@ -423,7 +434,7 @@ const Gallery = () => {
                   <div className="relative h-48 overflow-hidden rounded-t-lg">
                     <img 
                       src={project.image} 
-                      alt={project.title}
+                      alt={project.alt || project.title}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="gallery-overlay">
@@ -467,7 +478,7 @@ const Gallery = () => {
                   <div className="relative h-48 overflow-hidden rounded-t-lg">
                     <img 
                       src={project.image} 
-                      alt={project.title}
+                      alt={project.alt || project.title}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="gallery-overlay">
@@ -614,7 +625,7 @@ const Gallery = () => {
               
               <img 
                 src={selectedProject.image} 
-                alt={selectedProject.title}
+                alt={selectedProject.alt || selectedProject.title}
                 className="w-full h-64 md:h-96 object-cover rounded-t-lg"
               />
             </div>

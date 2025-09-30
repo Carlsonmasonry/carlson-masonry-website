@@ -139,7 +139,7 @@ const Testimonials = () => {
         <div className="absolute inset-0 opacity-40">
           <img 
             src={imaheadergallery} 
-            alt="Testimonials Background"
+            alt="Customer testimonials Carlson Masonry Arkansas - Client reviews for masonry services"
             className="w-full h-full object-cover object-center"
           />
         </div>
