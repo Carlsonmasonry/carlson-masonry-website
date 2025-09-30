@@ -142,7 +142,7 @@ const About = () => {
             fontFamily: 'Inter, sans-serif',
             lineHeight: '1.6'
           }}>
-            Building dreams and creating legacies since 2010. We combine traditional craftsmanship with modern masonry techniques to forge lasting relationships with every client. Our experienced team delivers exceptional quality in every brick, stone, and project across Northwest Arkansas.
+            Building dreams and creating legacies since 2010. We combine traditional craftsmanship with modern <Link to="/services" className="text-white underline hover:text-yellow-400 transition-colors">masonry techniques</Link> to forge lasting relationships with every client. Our experienced team delivers exceptional quality in every <Link to="/gallery" className="text-white underline hover:text-yellow-400 transition-colors">brick, stone, and project</Link> across Northwest Arkansas.
           </p>
           
           {/* CTA Buttons */}

@@ -304,11 +304,11 @@ const Services = () => {
             fontFamily: 'Lato, sans-serif',
             lineHeight: '1.6'
           }}>
-            From traditional brick installation to the most sophisticated natural stone techniques, 
+            From traditional <Link to="/services" className="text-white underline hover:text-yellow-400 transition-colors">brick installation</Link> to the most sophisticated <Link to="/services" className="text-white underline hover:text-yellow-400 transition-colors">natural stone techniques</Link>, 
             our team of expert craftsmen is ready to materialize any architectural vision 
             with the highest quality and professionalism. Serving Rogers, Bentonville, Springdale, 
             Fayetteville, and Siloam Springs with specialized masonry solutions designed for 
-            Arkansas's unique climate and architectural heritage.
+            Arkansas's unique climate and architectural heritage. <Link to="/gallery" className="text-white underline hover:text-yellow-400 transition-colors">View our completed projects</Link>.
           </p>
           
           {/* CTA Buttons */}

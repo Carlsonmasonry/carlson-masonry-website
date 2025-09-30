@@ -209,7 +209,7 @@ const Home = () => {
             fontFamily: 'Inter, sans-serif',
             lineHeight: '1.3'
           }}>
-            Over 10 years transforming visions into lasting realities across Northwest Arkansas. Specialists in masonry combining tradition, innovation and excellence. Proudly serving Rogers, Bentonville, Springdale, Fayetteville, and Siloam Springs with professional masonry services tailored to Arkansas's unique climate and architectural needs.
+            Over 10 years transforming visions into lasting realities across Northwest Arkansas. Specialists in <Link to="/services" className="text-white underline hover:text-yellow-400 transition-colors">masonry</Link> combining tradition, innovation and excellence. Proudly serving Rogers, Bentonville, Springdale, Fayetteville, and Siloam Springs with <Link to="/services" className="text-white underline hover:text-yellow-400 transition-colors">professional masonry services</Link> tailored to Arkansas's unique climate and architectural needs.
           </p>
           
           {/* CTA Buttons */}
@@ -354,8 +354,8 @@ const Home = () => {
               Brick & Stone Masonry Services in Arkansas
             </h2>
             <p className="text-sm md:text-lg max-w-3xl mx-auto leading-relaxed" style={{ color: '#1446A0' }}>
-              From traditional masonry to the most modern installations, 
-              our team of experts is here to materialize your projects.
+              From traditional <Link to="/services" className="text-[#0A2A66] font-semibold hover:text-yellow-600 transition-colors">masonry</Link> to the most modern installations, 
+              our team of experts is here to materialize your <Link to="/gallery" className="text-[#0A2A66] font-semibold hover:text-yellow-600 transition-colors">projects</Link>.
             </p>
           </div>
           
