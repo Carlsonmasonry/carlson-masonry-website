@@ -140,9 +140,46 @@ const Testimonials = () => {
     { number: "10+", label: "Years of Experience" }
   ];
 
+  // Review Schema with AggregateRating
+  const reviewSchemaData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Carlson Masonry LLC",
+    "image": "https://carlsonmasonryllc.net/logo.png",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": testimonials.length.toString(),
+      "bestRating": "5",
+      "worstRating": "5"
+    },
+    "review": testimonials.slice(0, 5).map(testimonial => ({
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": testimonial.name
+      },
+      "datePublished": "2024-01-01",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": testimonial.rating.toString(),
+        "bestRating": "5"
+      },
+      "reviewBody": testimonial.text,
+      "itemReviewed": {
+        "@type": "Service",
+        "name": testimonial.project
+      }
+    }))
+  };
+
   return (
     <div>
       <SEOHead {...seo} />
+      {/* Review Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify(reviewSchemaData)}
+      </script>
       {/* Hero Section */}
       <section id="testimonials-header" className="h-[100dvh] md:h-screen pt-[56px] md:pt-[72px] pb-0 md:pb-12 relative overflow-hidden flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #1B2A41 0%, #3E4C61 100%)' }}>
         {/* Background Image */}
