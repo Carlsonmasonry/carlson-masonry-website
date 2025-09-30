@@ -226,7 +226,7 @@ const About = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12" style={{ backgroundColor: '#F5E6D3' }}>
+      <section className="py-12 px-4 md:px-8" style={{ backgroundColor: '#F5E6D3' }}>
         <div className="container-custom">
           <div className="text-center mb-10">
             <h2 className="text-responsive-lg font-bold mb-3" style={{ color: '#1B2A41', fontFamily: 'Montserrat, sans-serif', fontWeight: '700' }}>
@@ -236,10 +236,10 @@ const About = () => {
               Over a decade delivering excellence, safety, and trust.
             </p>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mx-4 md:mx-8">
             {stats.map((stat, index) => (
-              <Card key={index} className="text-center border-0 shadow-lg card-hover transition-all duration-300 hover:scale-105" style={{ backgroundColor: '#FFFFFF', borderRadius: '12px' }}>
-                <CardContent className="p-6">
+              <Card key={index} className="text-center border-0 shadow-lg card-hover transition-all duration-300 hover:scale-105 aspect-square flex items-center justify-center" style={{ backgroundColor: '#FFFFFF', borderRadius: '16px' }}>
+                <CardContent className="p-4 md:p-6 flex flex-col items-center justify-center h-full">
                   <div className="service-icon mb-4">
                     <stat.icon className="w-8 h-8 transition-colors duration-300" style={{ color: '#FFB400' }} />
                   </div>
@@ -253,7 +253,7 @@ const About = () => {
       </section>
 
       {/* Mission, Vision, Values */}
-      <section className="py-8" style={{ backgroundColor: '#F9F9F9' }}>
+      <section className="py-8 px-4 md:px-8" style={{ backgroundColor: '#F9F9F9' }}>
         <div className="container-custom">
           <div className="text-center mb-4">
             <h2 className="text-responsive-lg font-bold mb-2" style={{ color: '#1B2A41', fontFamily: 'Montserrat, sans-serif', fontWeight: '700' }}>
@@ -286,7 +286,7 @@ const About = () => {
 
 
       {/* About Us Section */}
-      <section className="py-8 md:py-12 text-white" style={{ background: 'linear-gradient(135deg, #1B2A41 0%, #3E4C61 100%)' }}>
+      <section className="py-8 md:py-12 px-4 md:px-8 text-white" style={{ background: 'linear-gradient(135deg, #1B2A41 0%, #3E4C61 100%)' }}>
         <div className="container-custom">
           <div className="text-center mb-6">
             <h2 className="text-xl md:text-3xl font-bold mb-3" style={{ color: '#FFB400', fontFamily: 'Montserrat, sans-serif', fontWeight: '700' }}>
@@ -367,7 +367,7 @@ const About = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-8" style={{ backgroundColor: '#FFFFFF' }}>
+      <section className="py-8 px-4 md:px-8" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="relative">
