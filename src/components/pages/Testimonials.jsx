@@ -88,7 +88,7 @@ const Testimonials = () => {
       date: "November 2023",
       rating: 5,
       project: "Entry Restoration",
-      text: "The restoration of the brick entryway of our historic home was delicate work requiring specialized experience. Carlson Masonry not only restored the original beauty but also reinforced the structure to last many more years. Their knowledge of traditional techniques is impressive.",
+      text: "The restoration of the brick entryway of our home was delicate work requiring specialized experience. Carlson Masonry not only restored the original beauty but also reinforced the structure to last many more years. Their knowledge of traditional techniques is impressive.",
       highlight: "Impressive knowledge of traditional techniques"
     },
     {
