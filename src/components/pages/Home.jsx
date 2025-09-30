@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Award, CheckCircle, Heart, Star, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
+import SEOHead from '../SEOHead';
+import StructuredData from '../StructuredData';
 
 // Import images
 import heroImage from '../../assets/home.webp';
@@ -107,8 +109,61 @@ const Home = () => {
     { number: "24/7", label: "Customer Support" }
   ];
 
+  const seo = {
+    title: "Professional Masonry Services in Northwest Arkansas | Carlson Masonry LLC",
+    description: "Expert brick and stone masonry services in Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs. Over 10 years of quality craftsmanship in Arkansas. Free quotes available.",
+    keywords: "masonry services Arkansas, brick masonry Springdale, stone installation Rogers, masonry contractor Bentonville, brickwork Fayetteville, stone masonry Siloam Springs, Northwest Arkansas masonry, professional masonry Arkansas",
+    canonical: "/",
+    ogImage: "/logo.png"
+  };
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Carlson Masonry LLC",
+    "description": "Professional masonry services specializing in brick and stone work across Northwest Arkansas",
+    "url": "https://carlsonmasonryllc.net",
+    "telephone": "(479) 347-5469",
+    "email": "info@carlsonmasonryllc.net",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5713 Dancing Rabbit Dr",
+      "addressLocality": "Springdale",
+      "addressRegion": "AR",
+      "postalCode": "72762",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "36.1861",
+      "longitude": "-94.1234"
+    },
+    "areaServed": [
+      "Springdale, AR",
+      "Rogers, AR", 
+      "Bentonville, AR",
+      "Fayetteville, AR",
+      "Siloam Springs, AR"
+    ],
+    "serviceType": [
+      "Brick Masonry",
+      "Stone Installation", 
+      "Masonry Repairs",
+      "Residential Masonry"
+    ],
+    "openingHours": "Mo-Fr 08:00-17:00",
+    "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "47"
+    }
+  };
+
   return (
     <div>
+      <SEOHead {...seo} />
+      <StructuredData data={structuredData} />
       {/* Hero Section */}
       <section className="h-[100dvh] md:h-screen pt-[56px] md:pt-[72px] pb-0 md:pb-12 relative overflow-hidden flex items-center justify-center">
         {/* Background Image */}
@@ -116,7 +171,7 @@ const Home = () => {
           <img 
             src={heroImage} 
             alt="Home Background"
-            className="w-full h-full object-cover object-[center_30%] md:object-[left_20%]"
+            className="w-[120%] h-[120%] object-cover object-[center_60%] md:object-[right_-20%]"
           />
         </div>
         {/* Elegant Gradient Overlay */}
@@ -133,7 +188,7 @@ const Home = () => {
         
         <div className="container-custom text-center relative z-10 flex flex-col items-center justify-center h-full md:block md:h-auto md:pt-20">
           {/* Main Title */}
-          <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 leading-tight md:leading-tight" style={{
+          <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-6 leading-tight md:leading-tight" style={{
             color: '#FFFFFF',
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
             fontFamily: 'Poppins, sans-serif',
@@ -146,7 +201,7 @@ const Home = () => {
           </h1>
           
           {/* Subtitle */}
-          <p className="text-base md:text-2xl max-w-[90%] md:max-w-4xl mx-auto leading-snug md:leading-relaxed mb-6 md:mb-12 px-6 md:px-0" style={{ 
+          <p className="text-base md:text-2xl max-w-[90%] md:max-w-4xl mx-auto leading-snug md:leading-relaxed mb-6 md:mb-6 px-6 md:px-0" style={{ 
             color: '#FFFFFF', 
             fontFamily: 'Inter, sans-serif',
             lineHeight: '1.4'
@@ -209,7 +264,7 @@ const Home = () => {
           </div>
           
           {/* Quick contact */}
-          <div className="flex flex-col gap-0.5 justify-center items-center text-xs md:text-sm mt-4 md:mt-6">
+          <div className="flex flex-col gap-0.5 justify-center items-center text-xs md:text-sm mt-4 md:-mt-2">
             <div className="flex flex-col md:flex-row items-center space-y-0.5 md:space-y-0 md:space-x-4">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 md:w-4 md:h-4 text-white" />
