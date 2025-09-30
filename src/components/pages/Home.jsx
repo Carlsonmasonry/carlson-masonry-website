@@ -116,7 +116,7 @@ const Home = () => {
           <img 
             src={heroImage} 
             alt="Home Background"
-            className="w-full h-full object-cover object-center md:object-top"
+            className="w-full h-full object-cover object-[center_30%] md:object-[left_20%]"
           />
         </div>
         {/* Elegant Gradient Overlay */}
@@ -133,7 +133,7 @@ const Home = () => {
         
         <div className="container-custom text-center relative z-10 flex flex-col items-center justify-center h-full md:block md:h-auto md:pt-20">
           {/* Main Title */}
-          <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-6 leading-tight md:leading-tight" style={{
+          <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 leading-tight md:leading-tight" style={{
             color: '#FFFFFF',
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
             fontFamily: 'Poppins, sans-serif',
@@ -146,7 +146,7 @@ const Home = () => {
           </h1>
           
           {/* Subtitle */}
-          <p className="text-base md:text-2xl max-w-[90%] md:max-w-4xl mx-auto leading-snug md:leading-relaxed mb-4 md:mb-10 px-6 md:px-0" style={{ 
+          <p className="text-base md:text-2xl max-w-[90%] md:max-w-4xl mx-auto leading-snug md:leading-relaxed mb-6 md:mb-12 px-6 md:px-0" style={{ 
             color: '#FFFFFF', 
             fontFamily: 'Inter, sans-serif',
             lineHeight: '1.4'
