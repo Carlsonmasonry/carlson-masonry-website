@@ -204,10 +204,10 @@ const Home = () => {
           </h1>
           
           {/* Subtitle */}
-          <p className="text-base md:text-2xl max-w-[90%] md:max-w-4xl mx-auto leading-snug md:leading-relaxed mb-6 md:mb-6 px-6 md:px-0" style={{ 
+          <p className="text-lg md:text-3xl max-w-[90%] md:max-w-5xl mx-auto leading-relaxed md:leading-relaxed mb-6 md:mb-8 px-6 md:px-0" style={{ 
             color: '#FFFFFF', 
             fontFamily: 'Inter, sans-serif',
-            lineHeight: '1.4'
+            lineHeight: '1.6'
           }}>
             Over 10 years transforming visions into lasting realities across Northwest Arkansas. Specialists in masonry combining tradition, innovation and excellence. Proudly serving Rogers, Bentonville, Springdale, Fayetteville, and Siloam Springs with professional masonry services tailored to Arkansas's unique climate and architectural needs.
           </p>

@@ -157,14 +157,14 @@ const Contact = () => {
           </h1>
           
           {/* Subtitle */}
-          <p className="text-base md:text-xl max-w-[90%] md:max-w-4xl mx-auto leading-relaxed mb-3 md:mb-8 px-6 md:px-0" style={{ 
+          <p className="text-lg md:text-3xl max-w-[90%] md:max-w-5xl mx-auto leading-relaxed md:leading-relaxed mb-6 md:mb-8 px-6 md:px-0" style={{ 
             color: '#FFFFFF', 
             fontFamily: 'Lato, sans-serif',
-            lineHeight: '1.5'
+            lineHeight: '1.6'
           }}>
             We are here to help you materialize your masonry project. 
             Contact us today for a free consultation and discover how we can 
-            transform your vision into a beautiful and lasting reality.
+            transform your vision into a beautiful and lasting reality in Northwest Arkansas.
           </p>
           
           {/* CTA Buttons */}

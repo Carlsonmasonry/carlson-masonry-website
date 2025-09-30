@@ -85,12 +85,12 @@ const About = () => {
           </h1>
           
           {/* Subtitle */}
-          <p className="text-sm md:text-xl max-w-[90%] md:max-w-4xl mx-auto leading-snug md:leading-relaxed mb-2 md:mb-8 px-6 md:px-0" style={{ 
+          <p className="text-lg md:text-3xl max-w-[90%] md:max-w-5xl mx-auto leading-relaxed md:leading-relaxed mb-6 md:mb-8 px-6 md:px-0" style={{ 
             color: '#FFFFFF', 
             fontFamily: 'Inter, sans-serif',
-            lineHeight: '1.4'
+            lineHeight: '1.6'
           }}>
-            Building dreams and creating legacies since 2010. We combine traditional craftsmanship with modern masonry techniques to forge lasting relationships with every client.
+            Building dreams and creating legacies since 2010. We combine traditional craftsmanship with modern masonry techniques to forge lasting relationships with every client. Our experienced team delivers exceptional quality in every brick, stone, and project across Northwest Arkansas.
           </p>
           
           {/* CTA Buttons */}
