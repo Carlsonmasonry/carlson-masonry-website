@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, User, ArrowRight, Search, Tag, Clock } from 'lucide-react';
 import { Button } from '../ui/button';
@@ -8,6 +8,11 @@ import StructuredData from '../StructuredData';
 const Blog = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const blogPosts = [
     {
@@ -19,7 +24,7 @@ const Blog = () => {
       date: "2024-09-29",
       category: "Construction News",
       readTime: "5 min read",
-      image: "/api/placeholder/600/400",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop&crop=center",
       tags: ["Arkansas", "Construction", "Building Codes", "Northwest Arkansas"]
     },
     {
@@ -31,7 +36,7 @@ const Blog = () => {
       date: "2024-09-28",
       category: "Home Buying",
       readTime: "7 min read",
-      image: "/api/placeholder/600/400",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop&crop=center",
       tags: ["Home Buying", "Arkansas", "USDA Loans", "First-time Buyers"]
     },
     {
@@ -43,7 +48,7 @@ const Blog = () => {
       date: "2024-09-27",
       category: "Masonry Tips",
       readTime: "6 min read",
-      image: "/api/placeholder/600/400",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop&crop=center",
       tags: ["Climate", "Arkansas", "Masonry", "Materials", "Maintenance"]
     },
     {
@@ -55,7 +60,7 @@ const Blog = () => {
       date: "2024-09-26",
       category: "Building Codes",
       readTime: "8 min read",
-      image: "/api/placeholder/600/400",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop&crop=center",
       tags: ["Building Codes", "Arkansas", "Compliance", "Safety", "Energy Efficiency"]
     },
     {
@@ -67,7 +72,7 @@ const Blog = () => {
       date: "2024-09-25",
       category: "Maintenance",
       readTime: "9 min read",
-      image: "/api/placeholder/600/400",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop&crop=center",
       tags: ["Maintenance", "Arkansas", "Climate", "Protection", "Investment"]
     },
     {
@@ -79,7 +84,7 @@ const Blog = () => {
       date: "2024-09-24",
       category: "Real Estate",
       readTime: "10 min read",
-      image: "/api/placeholder/600/400",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop&crop=center",
       tags: ["Real Estate", "Northwest Arkansas", "Home Value", "ROI", "Market Trends"]
     }
   ];

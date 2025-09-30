@@ -69,14 +69,14 @@ const About = () => {
             fontWeight: '700'
           }}>
             Over 10 Years Building
-            <span className="block bg-gradient-to-r from-[#FFB400] to-[#E09B00] bg-clip-text text-transparent text-lg md:text-5xl lg:text-6xl leading-tight md:leading-tight">
+            <span className="block text-3xl md:text-5xl font-bold text-center bg-gradient-to-r from-[#FFD700] to-[#DAA520] bg-clip-text text-transparent drop-shadow-[1px_1px_4px_rgba(0,0,0,0.5)] leading-tight md:leading-tight">
               Dreams in Arkansas
             </span>
           </h1>
           
           {/* Subtitle */}
           <p className="text-sm md:text-xl max-w-[90%] md:max-w-4xl mx-auto leading-snug md:leading-relaxed mb-2 md:mb-8 px-6 md:px-0" style={{ 
-            color: '#E5E5E5', 
+            color: '#FFFFFF', 
             fontFamily: 'Inter, sans-serif',
             lineHeight: '1.4'
           }}>

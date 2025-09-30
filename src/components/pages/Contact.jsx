@@ -141,7 +141,7 @@ const Contact = () => {
           {/* Main Title */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight" style={{ color: '#FFFFFF', fontFamily: 'Montserrat, sans-serif', fontWeight: '700', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}>
             Contact Us Now
-            <span className="block bg-gradient-to-r from-[#FFB400] to-[#E09B00] bg-clip-text text-transparent text-lg md:text-5xl lg:text-6xl">
+            <span className="block text-3xl md:text-5xl font-bold text-center bg-gradient-to-r from-[#FFD700] to-[#DAA520] bg-clip-text text-transparent drop-shadow-[1px_1px_4px_rgba(0,0,0,0.5)] leading-tight md:leading-tight">
             And Start Building Your Dreams
             </span>
           </h1>

@@ -140,14 +140,14 @@ const Home = () => {
             fontWeight: '700'
           }}>
             We Build Your Dreams
-            <span className="block bg-gradient-to-r from-[#FFB400] to-[#E09B00] bg-clip-text text-transparent text-lg md:text-5xl lg:text-6xl leading-tight md:leading-tight">
+            <span className="block text-3xl md:text-5xl font-bold text-center bg-gradient-to-r from-[#FFD700] to-[#DAA520] bg-clip-text text-transparent drop-shadow-[1px_1px_4px_rgba(0,0,0,0.5)] leading-tight md:leading-tight">
               With Responsibility and Quality
             </span>
           </h1>
           
           {/* Subtitle */}
           <p className="text-sm md:text-xl max-w-[90%] md:max-w-4xl mx-auto leading-snug md:leading-relaxed mb-2 md:mb-8 px-6 md:px-0" style={{ 
-            color: '#E5E5E5', 
+            color: '#FFFFFF', 
             fontFamily: 'Inter, sans-serif',
             lineHeight: '1.4'
           }}>
@@ -251,15 +251,34 @@ const Home = () => {
             {coreValues.map((value, index) => {
               const iconColors = ['#FFB703', '#1FA2FF', '#1B2A41', '#FFB703'];
               const bgColors = ['bg-yellow-100', 'bg-blue-100', 'bg-gray-100', 'bg-yellow-100'];
+              const borderColors = ['#FFB703', '#1FA2FF', '#1B2A41', '#FFB703'];
               return (
-                <div key={index} className="bg-white/95 shadow-xl rounded-lg p-2 md:p-4 backdrop-blur text-center aspect-square flex flex-col justify-center">
-                  <div className={`w-8 h-8 md:w-12 md:h-12 rounded-lg shadow-lg flex items-center justify-center mb-2 md:mb-3 ${bgColors[index]}`}>
-                    <value.icon className={`w-4 h-4 md:w-6 md:h-6`} style={{ color: iconColors[index] }} />
+                <div 
+                  key={index} 
+                  className="bg-white/95 shadow-xl rounded-lg p-2 md:p-4 backdrop-blur text-center aspect-square flex flex-col justify-center transition-all duration-300 cursor-pointer border-2 border-transparent hover:border-4 hover:scale-105 hover:shadow-2xl"
+                  style={{
+                    borderColor: 'transparent'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = borderColors[index];
+                    e.currentTarget.style.borderWidth = '4px';
+                    e.currentTarget.style.transform = 'scale(1.05)';
+                    e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.25)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = 'transparent';
+                    e.currentTarget.style.borderWidth = '2px';
+                    e.currentTarget.style.transform = 'scale(1)';
+                    e.currentTarget.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)';
+                  }}
+                >
+                  <div className={`w-8 h-8 md:w-12 md:h-12 rounded-lg shadow-lg flex items-center justify-center mb-2 md:mb-3 mx-auto transition-all duration-300 ${bgColors[index]}`}>
+                    <value.icon className={`w-4 h-4 md:w-6 md:h-6 transition-all duration-300`} style={{ color: iconColors[index] }} />
                   </div>
-                  <h3 className="text-sm md:text-lg font-bold text-[#0A2A66] mb-1">
+                  <h3 className="text-sm md:text-lg font-bold text-[#0A2A66] mb-1 transition-all duration-300">
                     {value.title}
                   </h3>
-                  <p className="text-xs text-[#1446A0] leading-snug">
+                  <p className="text-xs text-[#1446A0] leading-snug transition-all duration-300">
                     {value.description}
                   </p>
                 </div>
@@ -343,11 +362,11 @@ const Home = () => {
           </div>
 
           {/* Grid de estadísticas */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 text-center mx-4 md:mx-0">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 text-center mx-4 md:mx-8">
             {stats.map((stat, index) => (
               <div 
                 key={index} 
-                className="space-y-1 md:space-y-2 p-4 md:p-6 rounded-2xl shadow-xl" 
+                className="space-y-1 md:space-y-2 p-4 md:p-6 rounded-lg shadow-xl aspect-square flex flex-col justify-center" 
                 style={{ backgroundColor: '#0A2A66' }}
               >
                 <div className="text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight" style={{ color: '#FFB703' }}>
@@ -408,23 +427,23 @@ const Home = () => {
             </p>
             <Link to="/contact#contact-form">
               <Button 
-                variant="outline"
                 className="transition-all duration-300 shadow-lg hover:shadow-xl"
                 style={{
-                  borderColor: '#FFB400',
-                  color: '#FFB400',
+                  backgroundColor: '#FFB400',
+                  color: '#1B2A41',
                   fontFamily: 'Montserrat, sans-serif',
                   fontWeight: '600',
-                  borderRadius: '12px'
+                  borderRadius: '12px',
+                  border: 'none'
                 }}
                 onMouseEnter={(e) => {
-                  e.target.style.backgroundColor = '#FFB400';
+                  e.target.style.background = 'linear-gradient(90deg, #FFB400 0%, #E09B00 100%)';
                   e.target.style.color = '#FFFFFF';
                   e.target.style.transform = 'translateY(-2px)';
                 }}
                 onMouseLeave={(e) => {
-                  e.target.style.backgroundColor = 'transparent';
-                  e.target.style.color = '#FFB400';
+                  e.target.style.background = '#FFB400';
+                  e.target.style.color = '#1B2A41';
                   e.target.style.transform = 'translateY(0px)';
                 }}
               >
@@ -602,23 +621,23 @@ const Home = () => {
           <div className="text-center">
             <Link to="/faq">
               <Button 
-                variant="outline"
                 className="transition-all duration-300 shadow-lg hover:shadow-xl"
                 style={{
-                  borderColor: '#FFB400',
-                  color: '#FFB400',
+                  backgroundColor: '#1B2A41',
+                  color: '#FFFFFF',
                   fontFamily: 'Montserrat, sans-serif',
                   fontWeight: '600',
-                  borderRadius: '12px'
+                  borderRadius: '12px',
+                  border: 'none'
                 }}
                 onMouseEnter={(e) => {
-                  e.target.style.backgroundColor = '#FFB400';
+                  e.target.style.background = 'linear-gradient(90deg, #1B2A41 0%, #1446A0 100%)';
                   e.target.style.color = '#FFFFFF';
                   e.target.style.transform = 'translateY(-2px)';
                 }}
                 onMouseLeave={(e) => {
-                  e.target.style.backgroundColor = 'transparent';
-                  e.target.style.color = '#FFB400';
+                  e.target.style.background = '#1B2A41';
+                  e.target.style.color = '#FFFFFF';
                   e.target.style.transform = 'translateY(0px)';
                 }}
               >
