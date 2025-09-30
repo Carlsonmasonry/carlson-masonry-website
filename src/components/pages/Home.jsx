@@ -133,20 +133,20 @@ const Home = () => {
         
         <div className="container-custom text-center relative z-10 flex flex-col items-center justify-center h-full md:block md:h-auto md:pt-20">
           {/* Main Title */}
-          <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-6 leading-tight md:leading-tight" style={{
+          <h1 className="text-xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-6 leading-tight md:leading-tight" style={{
             color: '#FFFFFF',
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
             fontFamily: 'Poppins, sans-serif',
             fontWeight: '700'
           }}>
-            We Build Your Dreams
-            <span className="block text-3xl md:text-5xl font-bold text-center bg-gradient-to-r from-[#FFD700] to-[#DAA520] bg-clip-text text-transparent drop-shadow-[1px_1px_4px_rgba(0,0,0,0.5)] leading-tight md:leading-tight">
-              With Responsibility and Quality
+            Professional Masonry in Arkansas
+            <span className="block text-xl md:text-3xl lg:text-4xl font-bold text-center bg-gradient-to-r from-[#FFD700] to-[#DAA520] bg-clip-text text-transparent drop-shadow-[1px_1px_4px_rgba(0,0,0,0.5)] leading-tight md:leading-tight">
+              We Build Your Dreams
             </span>
           </h1>
           
           {/* Subtitle */}
-          <p className="text-sm md:text-xl max-w-[90%] md:max-w-4xl mx-auto leading-snug md:leading-relaxed mb-2 md:mb-8 px-6 md:px-0" style={{ 
+          <p className="text-base md:text-2xl max-w-[90%] md:max-w-4xl mx-auto leading-snug md:leading-relaxed mb-2 md:mb-8 px-6 md:px-0" style={{ 
             color: '#FFFFFF', 
             fontFamily: 'Inter, sans-serif',
             lineHeight: '1.4'
@@ -238,7 +238,7 @@ const Home = () => {
         <div className="max-w-6xl mx-auto text-center px-4">
           {/* Título */}
           <h2 className="text-xl md:text-3xl font-bold text-white mb-1 leading-snug">
-            Our Core Values
+            Why Choose Carlson Masonry in Northwest Arkansas
           </h2>
 
           {/* Texto descriptivo */}
@@ -293,7 +293,7 @@ const Home = () => {
         <div className="container-custom">
           <div className="text-center mb-6">
             <h2 className="text-xl md:text-3xl font-bold mb-3" style={{ color: '#0A2A66' }}>
-              Our Specialized Services
+              Brick & Stone Masonry Services in Arkansas
             </h2>
             <p className="text-sm md:text-lg max-w-3xl mx-auto leading-relaxed" style={{ color: '#1446A0' }}>
               From traditional masonry to the most modern installations, 
@@ -354,7 +354,7 @@ const Home = () => {
           {/* Encabezado */}
           <div className="text-center mb-6 md:mb-12">
             <h2 className="text-xl md:text-3xl font-bold mb-2 md:mb-4 leading-snug" style={{ color: '#FFFFFF' }}>
-              Our Achievements in Numbers
+              Trusted Masonry Contractor in Arkansas
             </h2>
             <p className="text-sm md:text-xl max-w-3xl mx-auto leading-snug" style={{ color: '#FFFFFF' }}>
               A proven record of excellence in every project
