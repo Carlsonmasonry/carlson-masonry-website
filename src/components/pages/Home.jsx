@@ -133,20 +133,20 @@ const Home = () => {
         
         <div className="container-custom text-center relative z-10 flex flex-col items-center justify-center h-full md:block md:h-auto md:pt-20">
           {/* Main Title */}
-          <h1 className="text-xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-6 leading-tight md:leading-tight" style={{
+          <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-6 leading-tight md:leading-tight" style={{
             color: '#FFFFFF',
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
             fontFamily: 'Poppins, sans-serif',
             fontWeight: '700'
           }}>
-            Professional Masonry in Arkansas
+            Professional Masonry<br className="md:hidden" /> in Arkansas
             <span className="block text-xl md:text-3xl lg:text-4xl font-bold text-center bg-gradient-to-r from-[#FFD700] to-[#DAA520] bg-clip-text text-transparent drop-shadow-[1px_1px_4px_rgba(0,0,0,0.5)] leading-tight md:leading-tight">
               We Build Your Dreams
             </span>
           </h1>
           
           {/* Subtitle */}
-          <p className="text-base md:text-2xl max-w-[90%] md:max-w-4xl mx-auto leading-snug md:leading-relaxed mb-2 md:mb-8 px-6 md:px-0" style={{ 
+          <p className="text-base md:text-2xl max-w-[90%] md:max-w-4xl mx-auto leading-snug md:leading-relaxed mb-4 md:mb-10 px-6 md:px-0" style={{ 
             color: '#FFFFFF', 
             fontFamily: 'Inter, sans-serif',
             lineHeight: '1.4'
@@ -209,7 +209,7 @@ const Home = () => {
           </div>
           
           {/* Quick contact */}
-          <div className="flex flex-col gap-0.5 justify-center items-center text-xs md:text-sm">
+          <div className="flex flex-col gap-0.5 justify-center items-center text-xs md:text-sm mt-4 md:mt-6">
             <div className="flex flex-col md:flex-row items-center space-y-0.5 md:space-y-0 md:space-x-4">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 md:w-4 md:h-4 text-white" />
