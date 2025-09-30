@@ -224,7 +224,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Info Cards */}
-      <section className="pt-4 pb-12" style={{ backgroundColor: '#F5E6D3' }}>
+      <section className="pt-4 pb-12 px-4 md:px-8" style={{ backgroundColor: '#F5E6D3' }}>
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {contactInfo.map((info, index) => (
@@ -248,7 +248,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form and Map */}
-      <section id="contact-form" className="py-12" style={{ backgroundColor: '#F2F2F2' }}>
+      <section id="contact-form" className="py-12 px-4 md:px-8" style={{ backgroundColor: '#F2F2F2' }}>
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
