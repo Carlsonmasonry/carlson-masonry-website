@@ -29,9 +29,17 @@ const Contact = () => {
   
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // Scroll automático al formulario cuando se carga la página con hash
+  // Scroll to top or to hash section
   useEffect(() => {
     const hash = window.location.hash;
+    
+    // If no hash, scroll to top
+    if (!hash) {
+      window.scrollTo(0, 0);
+      return;
+    }
+    
+    // If has hash, scroll to that section
     if (hash === '#contact-form') {
       setTimeout(() => {
         const element = document.getElementById('contact-form');

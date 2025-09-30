@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Users, Calendar, Award, Shield, CheckCircle, Heart, Target, Eye, Zap, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '../ui/button';
@@ -10,6 +10,10 @@ import imaabout from '../../assets/imaabout.webp';
 import projectImage from '../../assets/C1YKTpWsG2qG.jpg';
 
 const About = () => {
+  // Scroll to top on page load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const teamValues = [
     {

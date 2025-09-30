@@ -13,6 +13,11 @@ import stoneworkImage from '../../assets/piedra.webp';
 import image4 from '../../assets/repair.webp';
 
 const Home = () => {
+  // Scroll to top on page load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
