@@ -9,8 +9,8 @@ const StructuredData = () => {
     "alternateName": "Carlson Masonry",
     "description": "Professional masonry services in Arkansas. Specialists in brick installation, natural stone, and masonry repairs with over 10 years of experience.",
     "url": "https://carlsonmasonryllc.net",
-    "logo": "https://carlsonmasonryllc.net/logo.png",
-    "image": "https://carlsonmasonryllc.net/logo.png",
+    "logo": "https://carlsonmasonryllc.net/logo.webp",
+    "image": "https://carlsonmasonryllc.net/logo.webp",
     "telephone": "(479) 347-5469",
     "email": "info@carlsonmasonryllc.net",
     "address": {

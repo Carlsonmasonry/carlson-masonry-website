@@ -118,11 +118,11 @@ const Home = () => {
   ];
 
   const seo = {
-    title: "Professional Masonry Services in Northwest Arkansas | Carlson Masonry LLC",
-    description: "Expert brick and stone masonry services in Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs. Over 10 years of quality craftsmanship in Arkansas. Free quotes available.",
+    title: "Professional Masonry Northwest Arkansas | Carlson Masonry",
+    description: "Expert brick & stone masonry in Springdale, Rogers, Bentonville. 10+ years experience. Free quotes. Call (479) 347-5469",
     keywords: "masonry services Arkansas, brick masonry Springdale, stone installation Rogers, masonry contractor Bentonville, brickwork Fayetteville, stone masonry Siloam Springs, Northwest Arkansas masonry, professional masonry Arkansas",
     canonical: "/",
-    ogImage: "/logo.png"
+    ogImage: "/logo.webp"
   };
 
   const structuredData = {

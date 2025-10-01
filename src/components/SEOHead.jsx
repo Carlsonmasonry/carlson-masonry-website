@@ -6,13 +6,13 @@ const SEOHead = ({
   description, 
   keywords, 
   canonical, 
-  ogImage = "/logo.png",
+  ogImage = "/logo.webp",
   ogType = "website",
   structuredData = null 
 }) => {
   const siteName = "Carlson Masonry LLC";
   const siteUrl = "https://carlsonmasonryllc.net";
-  const fullTitle = title ? `${title} | ${siteName}` : siteName;
+  const fullTitle = title || siteName;
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
 
   return (

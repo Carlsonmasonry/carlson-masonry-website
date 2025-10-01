@@ -10,11 +10,11 @@ import imaheaderservice from '../../assets/quote.webp';
 
 const Quote = () => {
   const seo = {
-    title: "Get Free Masonry Quote - Brick & Stone Work Estimates Arkansas",
-    description: "Request a free quote for professional masonry services in Northwest Arkansas. Fast estimates for brick installation, stone work, and masonry repairs in Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs. No obligation consultation.",
+    title: "Free Masonry Quote Arkansas | Carlson Masonry",
+    description: "Get free masonry estimates in NW Arkansas. Fast quotes for brick, stone & repairs. Serving Springdale, Rogers, Bentonville. (479) 347-5469",
     keywords: "free masonry quote Arkansas, brick masonry estimate, stone work quote Springdale, masonry cost Rogers, get masonry quote Bentonville, free masonry consultation Fayetteville, masonry pricing Arkansas",
     canonical: "/quote",
-    ogImage: "/logo.png"
+    ogImage: "/logo.webp"
   };
 
   const [currentStep, setCurrentStep] = useState(1);

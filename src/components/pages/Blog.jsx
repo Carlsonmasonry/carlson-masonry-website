@@ -100,11 +100,11 @@ const Blog = () => {
   });
 
   const seo = {
-    title: "Masonry Blog - Carlson Masonry LLC | Arkansas Construction News & Tips",
-    description: "Stay informed about Arkansas construction trends, masonry tips, home buying programs, and building codes. Expert advice from Carlson Masonry LLC serving Northwest Arkansas.",
+    title: "Masonry Blog Arkansas | Carlson Masonry Tips & News",
+    description: "Arkansas masonry tips, construction trends & building codes. Expert advice from Carlson Masonry serving Northwest Arkansas.",
     keywords: "Arkansas masonry blog, construction news, home buying programs, building codes, masonry tips, Northwest Arkansas construction",
     ogUrl: "https://carlsonmasonryllc.net/blog",
-    ogImage: "https://carlsonmasonryllc.net/logo.png",
+    ogImage: "https://carlsonmasonryllc.net/logo.webp",
     twitterCard: "summary_large_image"
   };
 

@@ -42,8 +42,8 @@ const About = () => {
   ];
 
   const seo = {
-    title: "About Us - Professional Masonry Contractors in Northwest Arkansas",
-    description: "Learn about Carlson Masonry LLC: Over 10 years of excellence in brick and stone masonry services across Northwest Arkansas. Meet our expert team serving Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs.",
+    title: "About Carlson Masonry | 10+ Years Northwest Arkansas",
+    description: "Professional masonry contractors in NW Arkansas. 10+ years experience in brick & stone. Serving Springdale, Rogers, Bentonville. Meet our team.",
     keywords: "about Carlson Masonry, masonry company Arkansas, professional masonry contractors, brick masonry experts Springdale, stone masonry team Rogers, masonry experience Arkansas, Northwest Arkansas contractors",
     canonical: "/about",
     ogImage: "/logo.png"

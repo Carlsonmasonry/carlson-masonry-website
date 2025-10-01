@@ -5,11 +5,11 @@ import SEOHead from '../SEOHead';
 
 const PrivacyPolicy = () => {
   const seo = {
-    title: "Privacy Policy | Carlson Masonry LLC",
-    description: "Read our privacy policy to understand how Carlson Masonry LLC protects your personal information and data. Learn about our commitment to privacy and security.",
+    title: "Privacy Policy | Carlson Masonry",
+    description: "Carlson Masonry LLC privacy policy. Learn how we protect your personal information and data. Our commitment to privacy & security.",
     keywords: "privacy policy, data protection, Carlson Masonry privacy, customer data security",
     canonical: "/privacy-policy",
-    ogImage: "/logo.png"
+    ogImage: "/logo.webp"
   };
 
   return (

@@ -8,11 +8,11 @@ import imaheadergallery from '../../assets/testimonail.webp';
 
 const Testimonials = () => {
   const seo = {
-    title: "Customer Reviews & Testimonials - Carlson Masonry Arkansas",
-    description: "Read real testimonials from satisfied customers in Northwest Arkansas. See why homeowners and businesses trust Carlson Masonry LLC for brick and stone masonry services in Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs.",
+    title: "Customer Reviews & Testimonials | Carlson Masonry Arkansas",
+    description: "Read real testimonials from NW Arkansas customers. See why homeowners trust Carlson Masonry for brick & stone in Springdale, Rogers, Bentonville.",
     keywords: "masonry reviews Arkansas, Carlson Masonry testimonials, customer reviews Springdale, brick masonry testimonials Rogers, stone work reviews Bentonville, masonry contractor ratings Arkansas",
     canonical: "/testimonials",
-    ogImage: "/logo.png"
+    ogImage: "/logo.webp"
   };
 
   useEffect(() => {
@@ -145,7 +145,7 @@ const Testimonials = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Carlson Masonry LLC",
-    "image": "https://carlsonmasonryllc.net/logo.png",
+    "image": "https://carlsonmasonryllc.net/logo.webp",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",

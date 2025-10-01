@@ -10,11 +10,11 @@ import contactImage from '../../assets/contac.webp';
 
 const Contact = () => {
   const seo = {
-    title: "Contact Us - Professional Masonry Contractors in Arkansas | Carlson Masonry",
-    description: "Contact Carlson Masonry LLC for expert brick and stone masonry services in Northwest Arkansas. Call (479) 347-5469 or email info@carlsonmasonryllc.net. Serving Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs.",
+    title: "Contact Carlson Masonry Arkansas | (479) 347-5469",
+    description: "Contact Carlson Masonry for brick & stone services in NW Arkansas. Call (479) 347-5469 or email info@carlsonmasonryllc.net. Free quotes.",
     keywords: "contact masonry contractor Arkansas, Carlson Masonry phone, masonry services contact Springdale, get masonry quote Rogers, brick masonry contact Bentonville, stone work inquiry Fayetteville",
     canonical: "/contact",
-    ogImage: "/logo.png"
+    ogImage: "/logo.webp"
   };
 
   const [formData, setFormData] = useState({

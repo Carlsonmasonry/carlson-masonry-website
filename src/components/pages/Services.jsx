@@ -8,7 +8,7 @@ import imaheaderservice from '../../assets/ladrillo.webp';
 
 // Import images
 import brickworkImage from '../../assets/68CPjQfi43Ek.webp';
-import stoneworkImage from '../../assets/BjlXGtMw0xC2.jpg';
+import stoneworkImage from '../../assets/BjlXGtMw0xC2.webp';
 import repairImage from '../../assets/C1YKTpWsG2qG.jpg';
 
 const Services = () => {
@@ -33,11 +33,11 @@ const Services = () => {
   }, []);
 
   const seo = {
-    title: "Masonry Services - Brick, Stone & Repair in Northwest Arkansas",
-    description: "Professional masonry services in Arkansas: Brick installation, natural stone work, masonry repairs and restoration. Expert contractors serving Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs. Free quotes available.",
+    title: "Brick, Stone & Repair Services Arkansas | Carlson Masonry",
+    description: "Brick installation, stone work & repairs in Northwest Arkansas. Serving Springdale, Rogers, Bentonville. Free quotes. (479) 347-5469",
     keywords: "masonry services Arkansas, brick masonry Springdale, stone installation Rogers, masonry contractor Bentonville, brick repair Fayetteville, stone work Siloam Springs, residential masonry, commercial masonry Arkansas",
     canonical: "/services",
-    ogImage: "/logo.png"
+    ogImage: "/logo.webp"
   };
 
   // Service Schema
@@ -48,7 +48,7 @@ const Services = () => {
     "provider": {
       "@type": "LocalBusiness",
       "name": "Carlson Masonry LLC",
-      "image": "https://carlsonmasonryllc.net/logo.png",
+      "image": "https://carlsonmasonryllc.net/logo.webp",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "5713 Dancing Rabbit Dr",

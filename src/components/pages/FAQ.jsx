@@ -7,11 +7,11 @@ import SEOHead from '../SEOHead';
 
 const FAQ = () => {
   const seo = {
-    title: "FAQ - Frequently Asked Questions | Carlson Masonry Arkansas",
-    description: "Find answers to common questions about masonry services, pricing, timelines, and more. Get expert advice from Carlson Masonry LLC serving Northwest Arkansas including Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs.",
+    title: "Masonry FAQ Arkansas | Carlson Masonry",
+    description: "Answers to masonry questions about services, pricing & timelines. Expert advice from Carlson Masonry serving NW Arkansas. Free consultation.",
     keywords: "masonry FAQ Arkansas, masonry questions, brick masonry answers, stone work FAQ, masonry pricing questions, masonry timeline Arkansas, masonry contractors FAQ",
     canonical: "/faq",
-    ogImage: "/logo.png"
+    ogImage: "/logo.webp"
   };
 
   const [openItems, setOpenItems] = useState({});

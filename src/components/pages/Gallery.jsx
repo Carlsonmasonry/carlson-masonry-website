@@ -26,11 +26,11 @@ const Gallery = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const seo = {
-    title: "Project Gallery - Masonry Work in Northwest Arkansas | Carlson Masonry",
-    description: "View our portfolio of brick and stone masonry projects in Arkansas. Residential and commercial work in Springdale, Rogers, Bentonville, Fayetteville, and Siloam Springs. Quality craftsmanship in every project.",
+    title: "Masonry Project Gallery Arkansas | Carlson Masonry",
+    description: "View our brick & stone masonry portfolio in Northwest Arkansas. Residential & commercial projects in Springdale, Rogers, Bentonville.",
     keywords: "masonry gallery Arkansas, brick masonry projects, stone work portfolio, masonry photos Springdale, completed projects Rogers, masonry examples Bentonville, residential masonry gallery, commercial masonry Arkansas",
     canonical: "/gallery",
-    ogImage: "/logo.png"
+    ogImage: "/logo.webp"
   };
 
   const projects = [
@@ -176,6 +176,7 @@ const Gallery = () => {
       year: "2024",
       description: "Casa de una planta con fachada en ladrillo rústico combinado con piedra clara.",
       image: residencial2,
+      alt: "Rustic brick and stone home in Fayetteville Arkansas - Traditional residential masonry",
       details: "Casa de una planta con fachada en ladrillo rústico combinado con piedra clara. La entrada arqueada en piedra resalta la puerta principal, mientras que los ventanales con arcos refuerzan un estilo clásico."
     },
     {
@@ -187,6 +188,7 @@ const Gallery = () => {
       year: "2024",
       description: "Residencia de dos plantas con fachada en ladrillo pintado en blanco y secciones superiores en paneles oscuros verticales.",
       image: residencial1,
+      alt: "Modern white brick home in Rogers Arkansas - Contemporary residential masonry design",
       details: "Residencia de dos plantas con fachada en ladrillo pintado en blanco y secciones superiores en paneles oscuros verticales. Las puertas y ventanas enmarcadas en negro le dan un aire moderno y elegante."
     }
   ];

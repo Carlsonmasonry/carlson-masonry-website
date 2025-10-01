@@ -110,7 +110,7 @@ const BlogPost = () => {
     description: post.excerpt,
     keywords: post.tags.join(', ') + ', Carlson Masonry, Arkansas masonry, Northwest Arkansas',
     ogUrl: `https://carlsonmasonryllc.net/blog/${post.id}`,
-    ogImage: "https://carlsonmasonryllc.net/logo.png",
+    ogImage: "https://carlsonmasonryllc.net/logo.webp",
     twitterCard: "summary_large_image"
   };
 

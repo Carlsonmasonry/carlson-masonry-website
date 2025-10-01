@@ -5,11 +5,11 @@ import SEOHead from '../SEOHead';
 
 const TermsOfService = () => {
   const seo = {
-    title: "Terms of Service | Carlson Masonry LLC",
-    description: "Read our terms of service for masonry services provided by Carlson Masonry LLC in Northwest Arkansas. Understanding our policies and customer agreements.",
+    title: "Terms of Service | Carlson Masonry",
+    description: "Terms of service for Carlson Masonry LLC in Northwest Arkansas. Read our policies and customer service agreements.",
     keywords: "terms of service, service agreement, Carlson Masonry terms, masonry contract terms",
     canonical: "/terms-of-service",
-    ogImage: "/logo.png"
+    ogImage: "/logo.webp"
   };
 
   return (
