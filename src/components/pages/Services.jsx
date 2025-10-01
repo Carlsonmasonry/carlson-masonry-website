@@ -7,7 +7,7 @@ import SEOHead from '../SEOHead';
 import imaheaderservice from '../../assets/ladrillo.webp';
 
 // Import images
-import brickworkImage from '../../assets/68CPjQfi43Ek.jpg';
+import brickworkImage from '../../assets/68CPjQfi43Ek.webp';
 import stoneworkImage from '../../assets/BjlXGtMw0xC2.jpg';
 import repairImage from '../../assets/C1YKTpWsG2qG.jpg';
 

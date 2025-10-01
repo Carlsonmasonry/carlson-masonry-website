@@ -7,7 +7,7 @@ import SEOHead from '../SEOHead';
 
 // Import images
 import project1 from '../../assets/C1YKTpWsG2qG.jpg';
-import project2 from '../../assets/68CPjQfi43Ek.jpg';
+import project2 from '../../assets/68CPjQfi43Ek.webp';
 import project7 from '../../assets/chimeneapiedra.webp';
 import project3 from '../../assets/casafachadapiedra.webp';
 import project4 from '../../assets/casaladrillo.webp';
