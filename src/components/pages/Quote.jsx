@@ -173,7 +173,7 @@ const Quote = () => {
     "Architectural design",
     "Permits and licenses",
     "Excavation and preparation",
-    "Waterproofing",
+    "Sealing",
     "Post-construction cleanup",
     "Scheduled maintenance",
     "Extended warranty",

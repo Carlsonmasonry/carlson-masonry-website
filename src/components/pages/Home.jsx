@@ -68,7 +68,7 @@ const Home = () => {
       description: "Expert brick installation for residential and commercial projects with impeccable finishes.",
       image: brickworkImage,
       alt: "Expert brick masonry services in Rogers and Bentonville Arkansas - Professional brickwork installation",
-      features: ["New installation", "Repairs", "Historical restoration"]
+      features: ["New installation", "Repairs", "Restoration"]
     },
     {
       title: "Natural Stone Installation",
@@ -82,7 +82,7 @@ const Home = () => {
       description: "Specialized repair services that restore the original beauty to your structures.",
       image: image4,
       alt: "Masonry repair and restoration services in Springdale Arkansas - Chimney and brick restoration",
-      features: ["Crack repair", "Rejointing", "Waterproofing"]
+      features: ["Crack repair", "Rejointing", "Sealing"]
     }
   ];
 
@@ -453,7 +453,7 @@ const Home = () => {
               Serving Northwest Arkansas Communities
             </h2>
             <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-              From the bustling business districts of Rogers and Bentonville to the historic charm of Fayetteville, 
+              From the bustling business districts of Rogers and Bentonville to the charming downtown of Fayetteville, 
               we understand the unique masonry needs of each Northwest Arkansas community.
             </p>
           </div>
@@ -478,7 +478,7 @@ const Home = () => {
             <div className="bg-gray-50 p-6 rounded-lg text-center">
               <h3 className="font-semibold text-lg mb-3" style={{ color: '#1B2A41' }}>Fayetteville & Siloam Springs</h3>
               <p className="text-gray-600 text-sm">
-                Historic restoration and new construction services, preserving the architectural 
+                Restoration and new construction services, preserving the architectural 
                 heritage while meeting modern needs.
               </p>
             </div>

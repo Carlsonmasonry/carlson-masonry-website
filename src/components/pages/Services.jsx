@@ -155,7 +155,7 @@ const Services = () => {
       features: [
         "New brick installation",
         "Existing structure repairs",
-        "Historic building restoration",
+        "Building restoration",
         "Brick fireplaces and patios",
         "Decorative and functional walls",
         "Custom finishes"
@@ -186,7 +186,7 @@ const Services = () => {
         "Natural stone fireplaces",
         "Stone patios and walkways",
         "Unique architectural elements",
-        "Historic stone restoration"
+        "Stone restoration"
       ],
       benefits: [
         "Unique and unrepeatable natural beauty",
@@ -211,8 +211,8 @@ const Services = () => {
       features: [
         "Crack and fissure repair",
         "Mortar repointing and replacement",
-        "Structure waterproofing",
-        "Historic building restoration",
+        "Structure sealing",
+        "Building restoration",
         "Specialized structural reinforcement",
         "Preventive maintenance"
       ],
@@ -551,7 +551,7 @@ const Services = () => {
             {/* First row - 3 cards */}
             <div className="rounded-xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-2" style={{ backgroundColor: 'rgba(27, 42, 65, 0.8)', borderColor: 'transparent', backdropFilter: 'blur(10px)' }} onMouseEnter={(e) => e.target.style.borderColor = '#FFB400'} onMouseLeave={(e) => e.target.style.borderColor = 'transparent'}>
               <h3 className="text-lg font-bold mb-3" style={{ color: '#FFFFFF', fontFamily: 'Montserrat, sans-serif' }}>Rogers</h3>
-              <p className="text-sm leading-relaxed" style={{ color: '#FFFFFF', fontFamily: 'Lato, sans-serif' }}>Historic downtown charm meets modern development in this thriving NWA city, known for its excellent schools and growing business district.</p>
+              <p className="text-sm leading-relaxed" style={{ color: '#FFFFFF', fontFamily: 'Lato, sans-serif' }}>Charming downtown meets modern development in this thriving NWA city, known for its excellent schools and growing business district.</p>
             </div>
             <div className="rounded-xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-2" style={{ backgroundColor: 'rgba(27, 42, 65, 0.8)', borderColor: 'transparent', backdropFilter: 'blur(10px)' }} onMouseEnter={(e) => e.target.style.borderColor = '#FFB400'} onMouseLeave={(e) => e.target.style.borderColor = 'transparent'}>
               <h3 className="text-lg font-bold mb-3" style={{ color: '#FFFFFF', fontFamily: 'Montserrat, sans-serif' }}>Bentonville</h3>
@@ -565,7 +565,7 @@ const Services = () => {
             {/* Second row - 2 cards centered */}
             <div className="rounded-xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-2 lg:col-start-1 lg:col-end-2" style={{ backgroundColor: 'rgba(27, 42, 65, 0.8)', borderColor: 'transparent', backdropFilter: 'blur(10px)' }} onMouseEnter={(e) => e.target.style.borderColor = '#FFB400'} onMouseLeave={(e) => e.target.style.borderColor = 'transparent'}>
               <h3 className="text-lg font-bold mb-3" style={{ color: '#FFFFFF', fontFamily: 'Montserrat, sans-serif' }}>Siloam Springs</h3>
-              <p className="text-sm leading-relaxed" style={{ color: '#FFFFFF', fontFamily: 'Lato, sans-serif' }}>A picturesque college town with natural springs, charming historic district, and strong community values perfect for family living.</p>
+              <p className="text-sm leading-relaxed" style={{ color: '#FFFFFF', fontFamily: 'Lato, sans-serif' }}>A picturesque college town with natural springs, charming downtown district, and strong community values perfect for family living.</p>
             </div>
             <div className="rounded-xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-2 lg:col-start-2 lg:col-end-3" style={{ backgroundColor: 'rgba(27, 42, 65, 0.8)', borderColor: 'transparent', backdropFilter: 'blur(10px)' }} onMouseEnter={(e) => e.target.style.borderColor = '#FFB400'} onMouseLeave={(e) => e.target.style.borderColor = 'transparent'}>
               <h3 className="text-lg font-bold mb-3" style={{ color: '#FFFFFF', fontFamily: 'Montserrat, sans-serif' }}>Fayetteville</h3>

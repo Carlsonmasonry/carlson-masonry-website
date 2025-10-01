@@ -66,7 +66,7 @@ const FAQ = () => {
         },
         {
           question: "Do you work in Fayetteville, Arkansas?",
-          answer: "Yes, we regularly serve Fayetteville and the University of Arkansas area. Our team is experienced with the diverse architectural styles found in Fayetteville and can handle both historic restoration and new construction projects."
+          answer: "Yes, we regularly serve Fayetteville and the University of Arkansas area. Our team is experienced with the diverse architectural styles found in Fayetteville and can handle both restoration and new construction projects."
         }
       ]
     },
