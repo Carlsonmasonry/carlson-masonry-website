@@ -8,7 +8,7 @@ import StructuredData from '../StructuredData';
 
 // Import images
 import heroImage from '../../assets/home.webp';
-import heroVideo from '../../assets/hero-construction.mp4';
+import heroVideo from '../../assets/Hero-Construction.mp4';
 import brickworkImage from '../../assets/ladrillo.webp';
 import stoneworkImage from '../../assets/piedra.webp';
 import image4 from '../../assets/repair.webp';
