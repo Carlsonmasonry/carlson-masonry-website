@@ -274,10 +274,10 @@ const Quote = () => {
             fontFamily: 'Lato, sans-serif',
             lineHeight: '1.6'
           }}>
-            Get a detailed and personalized quote for your masonry project in Northwest Arkansas. 
+            Get a detailed and personalized quote for your <Link to="/services" className="text-white underline hover:text-yellow-400 transition-colors">masonry project</Link> in Northwest Arkansas. 
             Our step-by-step process helps us understand exactly what you need 
             to provide you with the most accurate estimate possible for projects in Rogers, 
-            Bentonville, Springdale, Fayetteville, and Siloam Springs.
+            Bentonville, Springdale, Fayetteville, and Siloam Springs. <Link to="/gallery" className="text-white underline hover:text-yellow-400 transition-colors">View our portfolio</Link>.
           </p>
           
           {/* CTA Button */}

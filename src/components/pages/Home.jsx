@@ -8,6 +8,7 @@ import StructuredData from '../StructuredData';
 
 // Import images
 import heroImage from '../../assets/home.webp';
+import heroVideo from '../../assets/hero-construction.mp4';
 import brickworkImage from '../../assets/ladrillo.webp';
 import stoneworkImage from '../../assets/piedra.webp';
 import image4 from '../../assets/repair.webp';
@@ -174,13 +175,25 @@ const Home = () => {
       <StructuredData data={structuredData} />
       {/* Hero Section */}
       <section className="h-[100dvh] md:h-screen pt-[56px] md:pt-[72px] pb-0 md:pb-12 relative overflow-hidden flex items-center justify-center">
-        {/* Background Image */}
+        {/* Background Video */}
         <div className="absolute inset-0 opacity-70">
-          <img 
-            src={heroImage} 
-            alt="Professional masonry services in Northwest Arkansas - Brick and stone work Springdale Rogers Bentonville"
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            preload="metadata"
             className="w-[120%] h-[120%] md:w-full md:h-full object-cover object-[center_60%] md:object-[center_40%]"
-          />
+            style={{ filter: 'brightness(0.8)' }}
+          >
+            <source src={heroVideo} type="video/mp4" />
+            {/* Fallback image si el video no carga */}
+            <img 
+              src={heroImage} 
+              alt="Professional masonry services in Northwest Arkansas - Brick and stone work Springdale Rogers Bentonville"
+              className="w-[120%] h-[120%] md:w-full md:h-full object-cover object-[center_60%] md:object-[center_40%]"
+            />
+          </video>
         </div>
         {/* Elegant Gradient Overlay */}
         <div className="absolute inset-0" style={{ 

@@ -212,8 +212,8 @@ const Testimonials = () => {
           }}>
             Our clients' satisfaction is our greatest achievement. Each testimonial 
             represents a story of trust, quality, and dreams made reality across Northwest Arkansas. 
-            Discover why we are the preferred choice for masonry projects in Rogers, Bentonville, 
-            Springdale, Fayetteville, and Siloam Springs.
+            Discover why we are the preferred choice for <Link to="/services" className="text-white underline hover:text-yellow-400 transition-colors">masonry projects</Link> in Rogers, Bentonville, 
+            Springdale, Fayetteville, and Siloam Springs. <Link to="/gallery" className="text-white underline hover:text-yellow-400 transition-colors">See our work</Link>.
           </p>
           
           {/* CTA Buttons */}

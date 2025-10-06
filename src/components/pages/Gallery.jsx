@@ -263,10 +263,10 @@ const Gallery = () => {
             fontFamily: 'Lato, sans-serif',
             lineHeight: '1.6'
           }}>
-            Explore our collection of completed projects across Northwest Arkansas that demonstrate our commitment 
+            Explore our collection of completed <Link to="/services" className="text-white underline hover:text-yellow-400 transition-colors">masonry projects</Link> across Northwest Arkansas that demonstrate our commitment 
             to excellence, quality, and building dreams. Each project tells a unique 
             story of transformation and superior craftsmanship in Rogers, Bentonville, 
-            Springdale, Fayetteville, and Siloam Springs.
+            Springdale, Fayetteville, and Siloam Springs. <Link to="/quote" className="text-white underline hover:text-yellow-400 transition-colors">Start your project today</Link>.
           </p>
           
           {/* Category Buttons - Mobile (2x2 grid) */}

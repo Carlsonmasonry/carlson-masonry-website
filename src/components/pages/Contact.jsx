@@ -170,9 +170,9 @@ const Contact = () => {
             fontFamily: 'Lato, sans-serif',
             lineHeight: '1.6'
           }}>
-            We are here to help you materialize your masonry project. 
+            We are here to help you materialize your <Link to="/services" className="text-white underline hover:text-yellow-400 transition-colors">masonry project</Link>. 
             Contact us today for a free consultation and discover how we can 
-            transform your vision into a beautiful and lasting reality in Northwest Arkansas.
+            transform your vision into a beautiful and lasting reality in Northwest Arkansas. <Link to="/gallery" className="text-white underline hover:text-yellow-400 transition-colors">View our work</Link>.
           </p>
           
           {/* CTA Buttons */}
