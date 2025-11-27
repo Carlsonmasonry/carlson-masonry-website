@@ -9,6 +9,7 @@ import StructuredData from '../StructuredData';
 // Import images
 import heroImage from '../../assets/home.webp';
 import heroVideo from '../../assets/Hero-Construction.mp4';
+import heroVideoMobile from '../../assets/HeroConstructionapp.mp4';
 import brickworkImage from '../../assets/ladrillo.webp';
 import stoneworkImage from '../../assets/piedra.webp';
 import image4 from '../../assets/repair.webp';
@@ -177,13 +178,32 @@ const Home = () => {
       <section className="h-[100dvh] md:h-screen pt-[56px] md:pt-[72px] pb-0 md:pb-12 relative overflow-hidden flex items-center justify-center">
         {/* Background Video */}
         <div className="absolute inset-0 opacity-70">
+          {/* Video para móvil */}
           <video 
             autoPlay 
             muted 
             loop 
             playsInline
             preload="metadata"
-            className="w-[120%] h-[120%] md:w-full md:h-full object-cover object-[center_60%] md:object-[center_40%]"
+            className="w-[120%] h-[120%] md:hidden object-cover object-[center_60%]"
+            style={{ filter: 'brightness(0.8)' }}
+          >
+            <source src={heroVideoMobile} type="video/mp4" />
+            {/* Fallback image si el video no carga */}
+            <img 
+              src={heroImage} 
+              alt="Professional masonry services in Northwest Arkansas - Brick and stone work Springdale Rogers Bentonville"
+              className="w-[120%] h-[120%] object-cover object-[center_60%]"
+            />
+          </video>
+          {/* Video para desktop */}
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            preload="metadata"
+            className="hidden md:block w-full h-full object-cover object-[center_40%]"
             style={{ filter: 'brightness(0.8)' }}
           >
             <source src={heroVideo} type="video/mp4" />
@@ -191,7 +211,7 @@ const Home = () => {
             <img 
               src={heroImage} 
               alt="Professional masonry services in Northwest Arkansas - Brick and stone work Springdale Rogers Bentonville"
-              className="w-[120%] h-[120%] md:w-full md:h-full object-cover object-[center_60%] md:object-[center_40%]"
+              className="w-full h-full object-cover object-[center_40%]"
             />
           </video>
         </div>
@@ -225,7 +245,8 @@ const Home = () => {
           <p className="text-lg md:text-lg max-w-[90%] md:max-w-3xl mx-auto leading-relaxed md:leading-snug mb-6 md:mb-3 px-6 md:px-0" style={{ 
             color: '#FFFFFF', 
             fontFamily: 'Inter, sans-serif',
-            lineHeight: '1.6'
+            lineHeight: '1.25',
+            fontWeight: '500'
           }}>
             Over 10 years transforming visions into lasting realities across Northwest Arkansas. Specialists in <Link to="/services" className="text-white underline hover:text-yellow-400 transition-colors">masonry</Link> combining tradition, innovation and excellence. Proudly serving Rogers, Bentonville, Springdale, Fayetteville, and Siloam Springs with <Link to="/services" className="text-white underline hover:text-yellow-400 transition-colors">professional masonry services</Link> tailored to Arkansas's unique climate and architectural needs.
           </p>
